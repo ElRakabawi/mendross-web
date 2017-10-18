@@ -17,7 +17,7 @@ sub startup {
 
   $r->get('/')->to('home#index');
 
-  
+
 }
 
 1;

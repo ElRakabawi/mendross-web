@@ -32,34 +32,34 @@
 24 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-imagemin
 25 verbose request uri https://registry.npmjs.org/grunt-contrib-imagemin
 26 verbose request no auth needed
-27 info attempt registry request try #1 at 9:24:10 PM
-28 verbose request id 69c7038e7fe1fd2c
+27 info attempt registry request try #1 at 10:45:25 AM
+28 verbose request id 6506aa7448900d58
 29 verbose etag W/"59b677f9-fc96"
 30 verbose lastModified Mon, 11 Sep 2017 11:48:09 GMT
 31 http request GET https://registry.npmjs.org/grunt-contrib-imagemin
 32 http 304 https://registry.npmjs.org/grunt-contrib-imagemin
-33 verbose headers { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+33 verbose headers { date: 'Sun, 15 Oct 2017 08:45:25 GMT',
 33 verbose headers   via: '1.1 varnish',
 33 verbose headers   'cache-control': 'max-age=300',
 33 verbose headers   etag: 'W/"59b677f9-fc96"',
-33 verbose headers   age: '114',
+33 verbose headers   age: '0',
 33 verbose headers   connection: 'keep-alive',
-33 verbose headers   'x-served-by': 'cache-ams4134-AMS',
+33 verbose headers   'x-served-by': 'cache-hhn1537-HHN',
 33 verbose headers   'x-cache': 'HIT',
 33 verbose headers   'x-cache-hits': '1',
-33 verbose headers   'x-timer': 'S1508009052.078232,VS0,VE0',
+33 verbose headers   'x-timer': 'S1508057126.996144,VS0,VE2',
 33 verbose headers   vary: 'Accept-Encoding, Accept' }
 34 silly get cb [ 304,
-34 silly get   { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+34 silly get   { date: 'Sun, 15 Oct 2017 08:45:25 GMT',
 34 silly get     via: '1.1 varnish',
 34 silly get     'cache-control': 'max-age=300',
 34 silly get     etag: 'W/"59b677f9-fc96"',
-34 silly get     age: '114',
+34 silly get     age: '0',
 34 silly get     connection: 'keep-alive',
-34 silly get     'x-served-by': 'cache-ams4134-AMS',
+34 silly get     'x-served-by': 'cache-hhn1537-HHN',
 34 silly get     'x-cache': 'HIT',
 34 silly get     'x-cache-hits': '1',
-34 silly get     'x-timer': 'S1508009052.078232,VS0,VE0',
+34 silly get     'x-timer': 'S1508057126.996144,VS0,VE2',
 34 silly get     vary: 'Accept-Encoding, Accept' } ]
 35 verbose etag https://registry.npmjs.org/grunt-contrib-imagemin from cache
 36 verbose get saving grunt-contrib-imagemin to /Users/elrakabawi/.npm/registry.npmjs.org/grunt-contrib-imagemin/.cache.json
@@ -174,45 +174,45 @@
 77 silly mapToRegistry uri https://registry.npmjs.org/async
 78 verbose request uri https://registry.npmjs.org/gifsicle
 79 verbose request no auth needed
-80 info attempt registry request try #1 at 9:24:11 PM
+80 info attempt registry request try #1 at 10:45:26 AM
 81 verbose etag W/"599567c3-73a7"
 82 verbose lastModified Thu, 17 Aug 2017 09:54:11 GMT
 83 http request GET https://registry.npmjs.org/gifsicle
 84 verbose request uri https://registry.npmjs.org/chalk
 85 verbose request no auth needed
-86 info attempt registry request try #1 at 9:24:11 PM
+86 info attempt registry request try #1 at 10:45:26 AM
 87 verbose etag W/"59e23476-b7ca"
 88 verbose lastModified Sat, 14 Oct 2017 15:59:50 GMT
 89 http request GET https://registry.npmjs.org/chalk
 90 verbose request uri https://registry.npmjs.org/async
 91 verbose request no auth needed
-92 info attempt registry request try #1 at 9:24:11 PM
+92 info attempt registry request try #1 at 10:45:26 AM
 93 verbose etag W/"59e11961-22003"
 94 verbose lastModified Fri, 13 Oct 2017 19:52:01 GMT
 95 http request GET https://registry.npmjs.org/async
 96 http 304 https://registry.npmjs.org/gifsicle
-97 verbose headers { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+97 verbose headers { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 97 verbose headers   via: '1.1 varnish',
 97 verbose headers   'cache-control': 'max-age=300',
 97 verbose headers   etag: 'W/"599567c3-73a7"',
-97 verbose headers   age: '84',
+97 verbose headers   age: '112',
 97 verbose headers   connection: 'keep-alive',
-97 verbose headers   'x-served-by': 'cache-ams4134-AMS',
+97 verbose headers   'x-served-by': 'cache-hhn1537-HHN',
 97 verbose headers   'x-cache': 'HIT',
 97 verbose headers   'x-cache-hits': '1',
-97 verbose headers   'x-timer': 'S1508009052.484939,VS0,VE0',
+97 verbose headers   'x-timer': 'S1508057126.436919,VS0,VE0',
 97 verbose headers   vary: 'Accept-Encoding, Accept' }
 98 silly get cb [ 304,
-98 silly get   { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+98 silly get   { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 98 silly get     via: '1.1 varnish',
 98 silly get     'cache-control': 'max-age=300',
 98 silly get     etag: 'W/"599567c3-73a7"',
-98 silly get     age: '84',
+98 silly get     age: '112',
 98 silly get     connection: 'keep-alive',
-98 silly get     'x-served-by': 'cache-ams4134-AMS',
+98 silly get     'x-served-by': 'cache-hhn1537-HHN',
 98 silly get     'x-cache': 'HIT',
 98 silly get     'x-cache-hits': '1',
-98 silly get     'x-timer': 'S1508009052.484939,VS0,VE0',
+98 silly get     'x-timer': 'S1508057126.436919,VS0,VE0',
 98 silly get     vary: 'Accept-Encoding, Accept' } ]
 99 verbose etag https://registry.npmjs.org/gifsicle from cache
 100 verbose get saving gifsicle to /Users/elrakabawi/.npm/registry.npmjs.org/gifsicle/.cache.json
@@ -273,215 +273,215 @@
 122 verbose correctMkdir /Users/elrakabawi/.npm correctMkdir not in flight; initializing
 123 verbose afterAdd /Users/elrakabawi/.npm/gifsicle/0.1.7/package/package.json written
 124 http 304 https://registry.npmjs.org/async
-125 verbose headers { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+125 verbose headers { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 125 verbose headers   via: '1.1 varnish',
 125 verbose headers   'cache-control': 'max-age=300',
 125 verbose headers   etag: 'W/"59e11961-22003"',
-125 verbose headers   age: '59',
+125 verbose headers   age: '87',
 125 verbose headers   connection: 'keep-alive',
-125 verbose headers   'x-served-by': 'cache-ams4444-AMS',
+125 verbose headers   'x-served-by': 'cache-hhn1541-HHN',
 125 verbose headers   'x-cache': 'HIT',
-125 verbose headers   'x-cache-hits': '1',
-125 verbose headers   'x-timer': 'S1508009053.633881,VS0,VE0',
+125 verbose headers   'x-cache-hits': '4',
+125 verbose headers   'x-timer': 'S1508057127.569884,VS0,VE0',
 125 verbose headers   vary: 'Accept-Encoding, Accept' }
 126 silly get cb [ 304,
-126 silly get   { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+126 silly get   { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 126 silly get     via: '1.1 varnish',
 126 silly get     'cache-control': 'max-age=300',
 126 silly get     etag: 'W/"59e11961-22003"',
-126 silly get     age: '59',
+126 silly get     age: '87',
 126 silly get     connection: 'keep-alive',
-126 silly get     'x-served-by': 'cache-ams4444-AMS',
+126 silly get     'x-served-by': 'cache-hhn1541-HHN',
 126 silly get     'x-cache': 'HIT',
-126 silly get     'x-cache-hits': '1',
-126 silly get     'x-timer': 'S1508009053.633881,VS0,VE0',
+126 silly get     'x-cache-hits': '4',
+126 silly get     'x-timer': 'S1508057127.569884,VS0,VE0',
 126 silly get     vary: 'Accept-Encoding, Accept' } ]
 127 verbose etag https://registry.npmjs.org/async from cache
 128 verbose get saving async to /Users/elrakabawi/.npm/registry.npmjs.org/async/.cache.json
 129 verbose correctMkdir /Users/elrakabawi/.npm correctMkdir not in flight; initializing
 130 http 304 https://registry.npmjs.org/chalk
-131 verbose headers { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+131 verbose headers { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 131 verbose headers   via: '1.1 varnish',
 131 verbose headers   'cache-control': 'max-age=300',
 131 verbose headers   etag: 'W/"59e23476-b7ca"',
-131 verbose headers   age: '223',
+131 verbose headers   age: '236',
 131 verbose headers   connection: 'keep-alive',
-131 verbose headers   'x-served-by': 'cache-ams4445-AMS',
+131 verbose headers   'x-served-by': 'cache-hhn1539-HHN',
 131 verbose headers   'x-cache': 'HIT',
-131 verbose headers   'x-cache-hits': '11',
-131 verbose headers   'x-timer': 'S1508009053.651741,VS0,VE0',
+131 verbose headers   'x-cache-hits': '12',
+131 verbose headers   'x-timer': 'S1508057127.570239,VS0,VE0',
 131 verbose headers   vary: 'Accept-Encoding, Accept' }
 132 silly get cb [ 304,
-132 silly get   { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+132 silly get   { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 132 silly get     via: '1.1 varnish',
 132 silly get     'cache-control': 'max-age=300',
 132 silly get     etag: 'W/"59e23476-b7ca"',
-132 silly get     age: '223',
+132 silly get     age: '236',
 132 silly get     connection: 'keep-alive',
-132 silly get     'x-served-by': 'cache-ams4445-AMS',
+132 silly get     'x-served-by': 'cache-hhn1539-HHN',
 132 silly get     'x-cache': 'HIT',
-132 silly get     'x-cache-hits': '11',
-132 silly get     'x-timer': 'S1508009053.651741,VS0,VE0',
+132 silly get     'x-cache-hits': '12',
+132 silly get     'x-timer': 'S1508057127.570239,VS0,VE0',
 132 silly get     vary: 'Accept-Encoding, Accept' } ]
 133 verbose etag https://registry.npmjs.org/chalk from cache
 134 verbose get saving chalk to /Users/elrakabawi/.npm/registry.npmjs.org/chalk/.cache.json
 135 verbose correctMkdir /Users/elrakabawi/.npm correctMkdir not in flight; initializing
-136 silly resolveWithNewModule chalk@0.4.0 checking installable status
-137 silly cache add args [ 'chalk@~0.4.0', null ]
-138 verbose cache add spec chalk@~0.4.0
+136 silly resolveWithNewModule async@0.2.10 checking installable status
+137 silly cache add args [ 'async@~0.2.9', null ]
+138 verbose cache add spec async@~0.2.9
 139 silly cache add parsed spec Result {
-139 silly cache add   raw: 'chalk@~0.4.0',
+139 silly cache add   raw: 'async@~0.2.9',
 139 silly cache add   scope: null,
-139 silly cache add   escapedName: 'chalk',
-139 silly cache add   name: 'chalk',
-139 silly cache add   rawSpec: '~0.4.0',
-139 silly cache add   spec: '>=0.4.0 <0.5.0',
+139 silly cache add   escapedName: 'async',
+139 silly cache add   name: 'async',
+139 silly cache add   rawSpec: '~0.2.9',
+139 silly cache add   spec: '>=0.2.9 <0.3.0',
 139 silly cache add   type: 'range' }
-140 silly addNamed chalk@>=0.4.0 <0.5.0
-141 verbose addNamed ">=0.4.0 <0.5.0" is a valid semver range for chalk
-142 silly addNameRange { name: 'chalk', range: '>=0.4.0 <0.5.0', hasData: false }
-143 silly mapToRegistry name chalk
+140 silly addNamed async@>=0.2.9 <0.3.0
+141 verbose addNamed ">=0.2.9 <0.3.0" is a valid semver range for async
+142 silly addNameRange { name: 'async', range: '>=0.2.9 <0.3.0', hasData: false }
+143 silly mapToRegistry name async
 144 silly mapToRegistry using default registry
 145 silly mapToRegistry registry https://registry.npmjs.org/
 146 silly mapToRegistry data Result {
-146 silly mapToRegistry   raw: 'chalk',
+146 silly mapToRegistry   raw: 'async',
 146 silly mapToRegistry   scope: null,
-146 silly mapToRegistry   escapedName: 'chalk',
-146 silly mapToRegistry   name: 'chalk',
+146 silly mapToRegistry   escapedName: 'async',
+146 silly mapToRegistry   name: 'async',
 146 silly mapToRegistry   rawSpec: '',
 146 silly mapToRegistry   spec: 'latest',
 146 silly mapToRegistry   type: 'tag' }
-147 silly mapToRegistry uri https://registry.npmjs.org/chalk
-148 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
-149 silly resolveWithNewModule async@0.2.10 checking installable status
-150 silly cache add args [ 'async@~0.2.9', null ]
-151 verbose cache add spec async@~0.2.9
+147 silly mapToRegistry uri https://registry.npmjs.org/async
+148 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+149 silly resolveWithNewModule chalk@0.4.0 checking installable status
+150 silly cache add args [ 'chalk@~0.4.0', null ]
+151 verbose cache add spec chalk@~0.4.0
 152 silly cache add parsed spec Result {
-152 silly cache add   raw: 'async@~0.2.9',
+152 silly cache add   raw: 'chalk@~0.4.0',
 152 silly cache add   scope: null,
-152 silly cache add   escapedName: 'async',
-152 silly cache add   name: 'async',
-152 silly cache add   rawSpec: '~0.2.9',
-152 silly cache add   spec: '>=0.2.9 <0.3.0',
+152 silly cache add   escapedName: 'chalk',
+152 silly cache add   name: 'chalk',
+152 silly cache add   rawSpec: '~0.4.0',
+152 silly cache add   spec: '>=0.4.0 <0.5.0',
 152 silly cache add   type: 'range' }
-153 silly addNamed async@>=0.2.9 <0.3.0
-154 verbose addNamed ">=0.2.9 <0.3.0" is a valid semver range for async
-155 silly addNameRange { name: 'async', range: '>=0.2.9 <0.3.0', hasData: false }
-156 silly mapToRegistry name async
+153 silly addNamed chalk@>=0.4.0 <0.5.0
+154 verbose addNamed ">=0.4.0 <0.5.0" is a valid semver range for chalk
+155 silly addNameRange { name: 'chalk', range: '>=0.4.0 <0.5.0', hasData: false }
+156 silly mapToRegistry name chalk
 157 silly mapToRegistry using default registry
 158 silly mapToRegistry registry https://registry.npmjs.org/
 159 silly mapToRegistry data Result {
-159 silly mapToRegistry   raw: 'async',
+159 silly mapToRegistry   raw: 'chalk',
 159 silly mapToRegistry   scope: null,
-159 silly mapToRegistry   escapedName: 'async',
-159 silly mapToRegistry   name: 'async',
+159 silly mapToRegistry   escapedName: 'chalk',
+159 silly mapToRegistry   name: 'chalk',
 159 silly mapToRegistry   rawSpec: '',
 159 silly mapToRegistry   spec: 'latest',
 159 silly mapToRegistry   type: 'tag' }
-160 silly mapToRegistry uri https://registry.npmjs.org/async
-161 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
-162 verbose get https://registry.npmjs.org/chalk not expired, no request
-163 silly addNameRange number 2 { name: 'chalk', range: '>=0.4.0 <0.5.0', hasData: true }
-164 silly addNameRange versions [ 'chalk',
+160 silly mapToRegistry uri https://registry.npmjs.org/chalk
+161 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+162 verbose get https://registry.npmjs.org/async not expired, no request
+163 silly addNameRange number 2 { name: 'async', range: '>=0.2.9 <0.3.0', hasData: true }
+164 silly addNameRange versions [ 'async',
 164 silly addNameRange   [ '0.1.0',
 164 silly addNameRange     '0.1.1',
+164 silly addNameRange     '0.1.2',
+164 silly addNameRange     '0.1.3',
+164 silly addNameRange     '0.1.4',
+164 silly addNameRange     '0.1.5',
+164 silly addNameRange     '0.1.6',
+164 silly addNameRange     '0.1.7',
+164 silly addNameRange     '0.1.8',
+164 silly addNameRange     '0.1.9',
+164 silly addNameRange     '0.1.10',
+164 silly addNameRange     '0.1.11',
+164 silly addNameRange     '0.1.12',
+164 silly addNameRange     '0.1.13',
+164 silly addNameRange     '0.1.14',
+164 silly addNameRange     '0.1.15',
+164 silly addNameRange     '0.1.16',
+164 silly addNameRange     '0.1.17',
+164 silly addNameRange     '0.1.18',
+164 silly addNameRange     '0.1.19',
+164 silly addNameRange     '0.1.20',
+164 silly addNameRange     '0.1.21',
+164 silly addNameRange     '0.1.22',
 164 silly addNameRange     '0.2.0',
 164 silly addNameRange     '0.2.1',
+164 silly addNameRange     '0.2.2',
+164 silly addNameRange     '0.2.3',
+164 silly addNameRange     '0.2.4',
+164 silly addNameRange     '0.2.5',
+164 silly addNameRange     '0.2.6',
+164 silly addNameRange     '0.2.7',
+164 silly addNameRange     '0.2.8',
+164 silly addNameRange     '0.2.9',
+164 silly addNameRange     '0.2.10',
 164 silly addNameRange     '0.3.0',
 164 silly addNameRange     '0.4.0',
+164 silly addNameRange     '0.4.1',
 164 silly addNameRange     '0.5.0',
-164 silly addNameRange     '0.5.1',
+164 silly addNameRange     '0.6.0',
+164 silly addNameRange     '0.6.1',
+164 silly addNameRange     '0.6.2',
+164 silly addNameRange     '0.7.0',
+164 silly addNameRange     '0.8.0',
+164 silly addNameRange     '0.9.0',
+164 silly addNameRange     '0.9.2',
 164 silly addNameRange     '1.0.0',
 164 silly addNameRange     '1.1.0',
+164 silly addNameRange     '1.2.0',
 164 silly addNameRange     '1.1.1',
-164 silly addNameRange     '1.1.2',
-164 silly addNameRange     '1.1.3',
+164 silly addNameRange     '1.2.1',
+164 silly addNameRange     '1.3.0',
+164 silly addNameRange     '1.4.0',
+164 silly addNameRange     '1.4.1',
+164 silly addNameRange     '1.4.2',
+164 silly addNameRange     '1.5.0',
+164 silly addNameRange     '1.5.1',
+164 silly addNameRange     '1.5.2',
+164 silly addNameRange     '2.0.0-alpha.0',
+164 silly addNameRange     '2.0.0-rc.1',
+164 silly addNameRange     '2.0.0-rc.2',
+164 silly addNameRange     '2.0.0-rc.3',
+164 silly addNameRange     '2.0.0-rc.4',
+164 silly addNameRange     '2.0.0-rc.5',
+164 silly addNameRange     '2.0.0-rc.6',
 164 silly addNameRange     '2.0.0',
 164 silly addNameRange     '2.0.1',
-164 silly addNameRange     '2.1.0' ] ]
-165 silly addNamed chalk@0.4.0
-166 verbose addNamed "0.4.0" is a plain semver version for chalk
-167 verbose get https://registry.npmjs.org/async not expired, no request
-168 silly addNameRange number 2 { name: 'async', range: '>=0.2.9 <0.3.0', hasData: true }
-169 silly addNameRange versions [ 'async',
+164 silly addNameRange     '2.1.0',
+164 silly addNameRange     '2.1.1',
+164 silly addNameRange     '2.1.2',
+164 silly addNameRange     '2.1.4',
+164 silly addNameRange     '2.1.5',
+164 silly addNameRange     '2.2.0',
+164 silly addNameRange     '2.3.0',
+164 silly addNameRange     '2.4.0',
+164 silly addNameRange     '2.4.1',
+164 silly addNameRange     '2.5.0' ] ]
+165 silly addNamed async@0.2.10
+166 verbose addNamed "0.2.10" is a plain semver version for async
+167 verbose get https://registry.npmjs.org/chalk not expired, no request
+168 silly addNameRange number 2 { name: 'chalk', range: '>=0.4.0 <0.5.0', hasData: true }
+169 silly addNameRange versions [ 'chalk',
 169 silly addNameRange   [ '0.1.0',
 169 silly addNameRange     '0.1.1',
-169 silly addNameRange     '0.1.2',
-169 silly addNameRange     '0.1.3',
-169 silly addNameRange     '0.1.4',
-169 silly addNameRange     '0.1.5',
-169 silly addNameRange     '0.1.6',
-169 silly addNameRange     '0.1.7',
-169 silly addNameRange     '0.1.8',
-169 silly addNameRange     '0.1.9',
-169 silly addNameRange     '0.1.10',
-169 silly addNameRange     '0.1.11',
-169 silly addNameRange     '0.1.12',
-169 silly addNameRange     '0.1.13',
-169 silly addNameRange     '0.1.14',
-169 silly addNameRange     '0.1.15',
-169 silly addNameRange     '0.1.16',
-169 silly addNameRange     '0.1.17',
-169 silly addNameRange     '0.1.18',
-169 silly addNameRange     '0.1.19',
-169 silly addNameRange     '0.1.20',
-169 silly addNameRange     '0.1.21',
-169 silly addNameRange     '0.1.22',
 169 silly addNameRange     '0.2.0',
 169 silly addNameRange     '0.2.1',
-169 silly addNameRange     '0.2.2',
-169 silly addNameRange     '0.2.3',
-169 silly addNameRange     '0.2.4',
-169 silly addNameRange     '0.2.5',
-169 silly addNameRange     '0.2.6',
-169 silly addNameRange     '0.2.7',
-169 silly addNameRange     '0.2.8',
-169 silly addNameRange     '0.2.9',
-169 silly addNameRange     '0.2.10',
 169 silly addNameRange     '0.3.0',
 169 silly addNameRange     '0.4.0',
-169 silly addNameRange     '0.4.1',
 169 silly addNameRange     '0.5.0',
-169 silly addNameRange     '0.6.0',
-169 silly addNameRange     '0.6.1',
-169 silly addNameRange     '0.6.2',
-169 silly addNameRange     '0.7.0',
-169 silly addNameRange     '0.8.0',
-169 silly addNameRange     '0.9.0',
-169 silly addNameRange     '0.9.2',
+169 silly addNameRange     '0.5.1',
 169 silly addNameRange     '1.0.0',
 169 silly addNameRange     '1.1.0',
-169 silly addNameRange     '1.2.0',
 169 silly addNameRange     '1.1.1',
-169 silly addNameRange     '1.2.1',
-169 silly addNameRange     '1.3.0',
-169 silly addNameRange     '1.4.0',
-169 silly addNameRange     '1.4.1',
-169 silly addNameRange     '1.4.2',
-169 silly addNameRange     '1.5.0',
-169 silly addNameRange     '1.5.1',
-169 silly addNameRange     '1.5.2',
-169 silly addNameRange     '2.0.0-alpha.0',
-169 silly addNameRange     '2.0.0-rc.1',
-169 silly addNameRange     '2.0.0-rc.2',
-169 silly addNameRange     '2.0.0-rc.3',
-169 silly addNameRange     '2.0.0-rc.4',
-169 silly addNameRange     '2.0.0-rc.5',
-169 silly addNameRange     '2.0.0-rc.6',
+169 silly addNameRange     '1.1.2',
+169 silly addNameRange     '1.1.3',
 169 silly addNameRange     '2.0.0',
 169 silly addNameRange     '2.0.1',
-169 silly addNameRange     '2.1.0',
-169 silly addNameRange     '2.1.1',
-169 silly addNameRange     '2.1.2',
-169 silly addNameRange     '2.1.4',
-169 silly addNameRange     '2.1.5',
-169 silly addNameRange     '2.2.0',
-169 silly addNameRange     '2.3.0',
-169 silly addNameRange     '2.4.0',
-169 silly addNameRange     '2.4.1',
-169 silly addNameRange     '2.5.0' ] ]
-170 silly addNamed async@0.2.10
-171 verbose addNamed "0.2.10" is a plain semver version for async
+169 silly addNameRange     '2.1.0' ] ]
+170 silly addNamed chalk@0.4.0
+171 verbose addNamed "0.4.0" is a plain semver version for chalk
 172 silly cache afterAdd chalk@0.4.0
 173 verbose afterAdd /Users/elrakabawi/.npm/chalk/0.4.0/package/package.json not in flight; writing
 174 verbose correctMkdir /Users/elrakabawi/.npm correctMkdir not in flight; initializing
@@ -505,33 +505,33 @@
 185 silly mapToRegistry uri https://registry.npmjs.org/ansi-styles
 186 verbose request uri https://registry.npmjs.org/ansi-styles
 187 verbose request no auth needed
-188 info attempt registry request try #1 at 9:24:12 PM
+188 info attempt registry request try #1 at 10:45:26 AM
 189 verbose etag W/"59bc16cc-54b8"
 190 verbose lastModified Fri, 15 Sep 2017 18:07:08 GMT
 191 http request GET https://registry.npmjs.org/ansi-styles
 192 http 304 https://registry.npmjs.org/ansi-styles
-193 verbose headers { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+193 verbose headers { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 193 verbose headers   via: '1.1 varnish',
 193 verbose headers   'cache-control': 'max-age=300',
 193 verbose headers   etag: 'W/"59bc16cc-54b8"',
-193 verbose headers   age: '184',
+193 verbose headers   age: '6',
 193 verbose headers   connection: 'keep-alive',
-193 verbose headers   'x-served-by': 'cache-ams4134-AMS',
+193 verbose headers   'x-served-by': 'cache-hhn1537-HHN',
 193 verbose headers   'x-cache': 'HIT',
 193 verbose headers   'x-cache-hits': '1',
-193 verbose headers   'x-timer': 'S1508009053.984867,VS0,VE0',
+193 verbose headers   'x-timer': 'S1508057127.715173,VS0,VE0',
 193 verbose headers   vary: 'Accept-Encoding, Accept' }
 194 silly get cb [ 304,
-194 silly get   { date: 'Sat, 14 Oct 2017 19:24:12 GMT',
+194 silly get   { date: 'Sun, 15 Oct 2017 08:45:26 GMT',
 194 silly get     via: '1.1 varnish',
 194 silly get     'cache-control': 'max-age=300',
 194 silly get     etag: 'W/"59bc16cc-54b8"',
-194 silly get     age: '184',
+194 silly get     age: '6',
 194 silly get     connection: 'keep-alive',
-194 silly get     'x-served-by': 'cache-ams4134-AMS',
+194 silly get     'x-served-by': 'cache-hhn1537-HHN',
 194 silly get     'x-cache': 'HIT',
 194 silly get     'x-cache-hits': '1',
-194 silly get     'x-timer': 'S1508009053.984867,VS0,VE0',
+194 silly get     'x-timer': 'S1508057127.715173,VS0,VE0',
 194 silly get     vary: 'Accept-Encoding, Accept' } ]
 195 verbose etag https://registry.npmjs.org/ansi-styles from cache
 196 verbose get saving ansi-styles to /Users/elrakabawi/.npm/registry.npmjs.org/ansi-styles/.cache.json
@@ -622,11 +622,11 @@
 238 info git [ 'rev-list', '-n1', '7dcdf9fa3f8956610fd6f69f72c67bace2de7138' ]
 239 silly resolveHead pipobscure/fsevents#7dcdf9fa3f8956610fd6f69f72c67bace2de7138 resolved treeish: 7dcdf9fa3f8956610fd6f69f72c67bace2de7138
 240 verbose resolveHead pipobscure/fsevents#7dcdf9fa3f8956610fd6f69f72c67bace2de7138 resolved Git URL: git://github.com/pipobscure/fsevents.git#7dcdf9fa3f8956610fd6f69f72c67bace2de7138
-241 silly resolveHead Git working directory: /var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32906-78e3fe7d/git-cache-d96a637c/7dcdf9fa3f8956610fd6f69f72c67bace2de7138
+241 silly resolveHead Git working directory: /var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32716-e1c99915/git-cache-29e98ff8/7dcdf9fa3f8956610fd6f69f72c67bace2de7138
 242 info git [ 'clone',
 242 info git   '/Users/elrakabawi/.npm/_git-remotes/git-github-com-pipobscure-fsevents-git-7dcdf9fa3f8956610fd6f69f72c67bace2de7138-40e7e494',
-242 info git   '/var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32906-78e3fe7d/git-cache-d96a637c/7dcdf9fa3f8956610fd6f69f72c67bace2de7138' ]
-243 verbose cloneResolved pipobscure/fsevents#7dcdf9fa3f8956610fd6f69f72c67bace2de7138 clone Cloning into '/var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32906-78e3fe7d/git-cache-d96a637c/7dcdf9fa3f8956610fd6f69f72c67bace2de7138'...
+242 info git   '/var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32716-e1c99915/git-cache-29e98ff8/7dcdf9fa3f8956610fd6f69f72c67bace2de7138' ]
+243 verbose cloneResolved pipobscure/fsevents#7dcdf9fa3f8956610fd6f69f72c67bace2de7138 clone Cloning into '/var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32716-e1c99915/git-cache-29e98ff8/7dcdf9fa3f8956610fd6f69f72c67bace2de7138'...
 243 verbose cloneResolved done.
 244 info git [ 'checkout', '7dcdf9fa3f8956610fd6f69f72c67bace2de7138' ]
 245 verbose checkoutTreeish pipobscure/fsevents#7dcdf9fa3f8956610fd6f69f72c67bace2de7138 checkout Note: checking out '7dcdf9fa3f8956610fd6f69f72c67bace2de7138'.
@@ -646,9 +646,9 @@
 248 verbose addLocalDirectory /Users/elrakabawi/.npm/fsevents/0.2.1/package.tgz not in flight; packing
 249 verbose correctMkdir /Users/elrakabawi/.npm correctMkdir not in flight; initializing
 250 verbose tar pack [ '/Users/elrakabawi/.npm/fsevents/0.2.1/package.tgz',
-250 verbose tar pack   '/var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32906-78e3fe7d/git-cache-d96a637c/7dcdf9fa3f8956610fd6f69f72c67bace2de7138' ]
+250 verbose tar pack   '/var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32716-e1c99915/git-cache-29e98ff8/7dcdf9fa3f8956610fd6f69f72c67bace2de7138' ]
 251 verbose tarball /Users/elrakabawi/.npm/fsevents/0.2.1/package.tgz
-252 verbose folder /var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32906-78e3fe7d/git-cache-d96a637c/7dcdf9fa3f8956610fd6f69f72c67bace2de7138
+252 verbose folder /var/folders/w3/s4czf1kx2y14wmfy4949h_880000gn/T/npm-32716-e1c99915/git-cache-29e98ff8/7dcdf9fa3f8956610fd6f69f72c67bace2de7138
 253 verbose addLocalTarball adding from inside cache /Users/elrakabawi/.npm/fsevents/0.2.1/package.tgz
 254 verbose correctMkdir /Users/elrakabawi/.npm correctMkdir not in flight; initializing
 255 verbose addRemoteGit data._from: pipobscure/fsevents#7dcdf9fa3f8956610fd6f69f72c67bace2de7138
@@ -673,33 +673,33 @@
 267 silly mapToRegistry uri https://registry.npmjs.org/nan
 268 verbose request uri https://registry.npmjs.org/nan
 269 verbose request no auth needed
-270 info attempt registry request try #1 at 9:24:13 PM
+270 info attempt registry request try #1 at 10:45:27 AM
 271 verbose etag W/"59c33594-20237"
 272 verbose lastModified Thu, 21 Sep 2017 03:44:20 GMT
 273 http request GET https://registry.npmjs.org/nan
 274 http 304 https://registry.npmjs.org/nan
-275 verbose headers { date: 'Sat, 14 Oct 2017 19:24:14 GMT',
+275 verbose headers { date: 'Sun, 15 Oct 2017 08:45:27 GMT',
 275 verbose headers   via: '1.1 varnish',
 275 verbose headers   'cache-control': 'max-age=300',
 275 verbose headers   etag: 'W/"59c33594-20237"',
-275 verbose headers   age: '188',
+275 verbose headers   age: '172',
 275 verbose headers   connection: 'keep-alive',
-275 verbose headers   'x-served-by': 'cache-ams4444-AMS',
+275 verbose headers   'x-served-by': 'cache-hhn1541-HHN',
 275 verbose headers   'x-cache': 'HIT',
-275 verbose headers   'x-cache-hits': '1',
-275 verbose headers   'x-timer': 'S1508009054.232582,VS0,VE0',
+275 verbose headers   'x-cache-hits': '3',
+275 verbose headers   'x-timer': 'S1508057128.748818,VS0,VE0',
 275 verbose headers   vary: 'Accept-Encoding, Accept' }
 276 silly get cb [ 304,
-276 silly get   { date: 'Sat, 14 Oct 2017 19:24:14 GMT',
+276 silly get   { date: 'Sun, 15 Oct 2017 08:45:27 GMT',
 276 silly get     via: '1.1 varnish',
 276 silly get     'cache-control': 'max-age=300',
 276 silly get     etag: 'W/"59c33594-20237"',
-276 silly get     age: '188',
+276 silly get     age: '172',
 276 silly get     connection: 'keep-alive',
-276 silly get     'x-served-by': 'cache-ams4444-AMS',
+276 silly get     'x-served-by': 'cache-hhn1541-HHN',
 276 silly get     'x-cache': 'HIT',
-276 silly get     'x-cache-hits': '1',
-276 silly get     'x-timer': 'S1508009054.232582,VS0,VE0',
+276 silly get     'x-cache-hits': '3',
+276 silly get     'x-timer': 'S1508057128.748818,VS0,VE0',
 276 silly get     vary: 'Accept-Encoding, Accept' } ]
 277 verbose etag https://registry.npmjs.org/nan from cache
 278 verbose get saving nan to /Users/elrakabawi/.npm/registry.npmjs.org/nan/.cache.json
@@ -1035,6 +1035,7 @@
 304 silly currentTree ├── has-ansi@2.0.0
 304 silly currentTree ├── has-color@0.1.7
 304 silly currentTree ├── hawk@1.0.0
+304 silly currentTree ├── highcharts@6.0.1
 304 silly currentTree ├── hoek@0.9.1
 304 silly currentTree ├── hooker@0.2.3
 304 silly currentTree ├── html-minifier@0.5.6
@@ -1482,6 +1483,7 @@
 305 silly idealTree ├── has-ansi@2.0.0
 305 silly idealTree ├── has-color@0.1.7
 305 silly idealTree ├── hawk@1.0.0
+305 silly idealTree ├── highcharts@6.0.1
 305 silly idealTree ├── hoek@0.9.1
 305 silly idealTree ├── hooker@0.2.3
 305 silly idealTree ├── html-minifier@0.5.6
@@ -1796,10 +1798,10 @@
 401 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/ansi-styles-162850de
 402 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/async-99e9d82a is being purged from base /Users/elrakabawi/Desktop/mendross-web
 403 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/async-99e9d82a
-404 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e is being purged from base /Users/elrakabawi/Desktop/mendross-web
-405 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e
-406 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214 is being purged from base /Users/elrakabawi/Desktop/mendross-web
-407 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214
+404 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214 is being purged from base /Users/elrakabawi/Desktop/mendross-web
+405 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214
+406 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e is being purged from base /Users/elrakabawi/Desktop/mendross-web
+407 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e
 408 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/fsevents-ecce7727 is being purged from base /Users/elrakabawi/Desktop/mendross-web
 409 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/fsevents-ecce7727
 410 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/grunt-contrib-imagemin-062924d8 is being purged from base /Users/elrakabawi/Desktop/mendross-web
@@ -1814,14 +1816,14 @@
 419 verbose tar unpacking to /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/async-99e9d82a
 420 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/async-99e9d82a is being purged
 421 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/async-99e9d82a
-422 verbose tar unpack /Users/elrakabawi/.npm/nan/0.8.0/package.tgz
-423 verbose tar unpacking to /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e
-424 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e is being purged
-425 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e
-426 verbose tar unpack /Users/elrakabawi/.npm/chalk/0.4.0/package.tgz
-427 verbose tar unpacking to /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214
-428 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214 is being purged
-429 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214
+422 verbose tar unpack /Users/elrakabawi/.npm/chalk/0.4.0/package.tgz
+423 verbose tar unpacking to /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214
+424 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214 is being purged
+425 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/chalk-dc27e214
+426 verbose tar unpack /Users/elrakabawi/.npm/nan/0.8.0/package.tgz
+427 verbose tar unpacking to /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e
+428 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e is being purged
+429 verbose gentlyRm don't care about contents; nuking /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/nan-6c4fae3e
 430 verbose tar unpack /Users/elrakabawi/.npm/fsevents/0.2.1/package.tgz
 431 verbose tar unpacking to /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/fsevents-ecce7727
 432 silly gentlyRm /Users/elrakabawi/Desktop/mendross-web/node_modules/.staging/fsevents-ecce7727 is being purged
@@ -1853,14 +1855,14 @@
 458 silly gunzTarPerm extractEntry readme.md
 459 silly gunzTarPerm extractEntry README.md
 460 silly gunzTarPerm extractEntry LICENSE
-461 silly gunzTarPerm extractEntry component.json
-462 silly gunzTarPerm extractEntry lib/async.js
-463 silly gunzTarPerm extractEntry README.md
-464 silly gunzTarPerm extractEntry LICENSE
-465 silly gunzTarPerm extractEntry include_dirs.js
-466 silly gunzTarPerm extractEntry .dntrc
-467 silly gunzTarPerm extractEntry build/config.gypi
-468 silly gunzTarPerm extractEntry nan.h
+461 silly gunzTarPerm extractEntry include_dirs.js
+462 silly gunzTarPerm extractEntry .dntrc
+463 silly gunzTarPerm extractEntry build/config.gypi
+464 silly gunzTarPerm extractEntry nan.h
+465 silly gunzTarPerm extractEntry README.md
+466 silly gunzTarPerm extractEntry LICENSE
+467 silly gunzTarPerm extractEntry component.json
+468 silly gunzTarPerm extractEntry lib/async.js
 469 silly gunzTarPerm extractEntry index.js
 470 silly gunzTarPerm extractEntry readme.md
 471 silly gunzTarPerm extractEntry .npmignore
