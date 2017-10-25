@@ -10,13 +10,13 @@
           </div>
       </div>
   </center>
-  <form method="POST" role="form" action="/draw">
+  <form method="POST" role="form" action="/cross">
     <div class="form-group">
       <label for="exampleSelect1">Type of inheritance: </label>
       <select class="form-control" id="genes" name="gene">
-        <option>Monohybrid</option>
-        <option>Dihybrid</option>
-        <option>Trihybrid</option>
+        <option value="1">Monohybrid</option>
+        <option value="2">Dihybrid</option>
+        <option value="3">Trihybrid</option>
       </select>
     </div>
     <div class="form-group">
@@ -38,24 +38,24 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>A</th>
-        <th>a</th>
+        <th><% $POG[0] %></th>
+        <th><% $POG[1] %></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">A</th>
-        <td bgcolor="black">AA</td>
+        <th scope="row"><% $PTG[0] %></th>
+        <td>AA</td>
         <td>Aa</td>
       </tr>
       <tr>
-        <th scope="row">a</th>
+        <th scope="row"><% $PTG[1] %></th>
         <td>Aa</td>
         <td>aa</td>
       </tr>
     </tbody>
   </table>
 </div>
-<h5><% gene %></h5>
-<h5><% pog %></h5>
-<h5><% ptg %></h5>
+<h5><% genes %></h5>
+<h5><% p_one %></h5>
+<h5><% p_two %></h5>
