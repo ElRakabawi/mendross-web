@@ -1,23 +1,21 @@
 package Mendross;
 use Mojo::Base 'Mojolicious';
-use Schema;
-
-has schema => sub {
-  return Schema->connect('dbi:SQLite:' . ($ENV{MOJO_DB} || 'share/schema.db'));
-};
 
 # This method will run once at server start
 sub startup {
   my $self = shift;
 
-  $self->helper(db => sub { $self->app->schema });
+  # Load configuration from hash returned by "my_app.conf"
+  my $config = $self->plugin('Config');
 
-  # Routes
+  # Documentation browser under "/perldoc"
+  $self->plugin('PODRenderer') if $config->{perldoc};
+
+  # Router
   my $r = $self->routes;
 
-  $r->get('/')->to('home#index');
-
-
+  # Normal route to controller
+  $r->get('/')->to('example#welcome');
 }
 
 1;
