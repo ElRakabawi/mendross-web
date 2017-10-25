@@ -10,10 +10,10 @@
           </div>
       </div>
   </center>
-  <form method="POST" action="/post">
+  <form method="POST" role="form" action="/draw">
     <div class="form-group">
       <label for="exampleSelect1">Type of inheritance: </label>
-      <select class="form-control" id="genes" name="mono">
+      <select class="form-control" id="genes" name="gene">
         <option>Monohybrid</option>
         <option>Dihybrid</option>
         <option>Trihybrid</option>
@@ -21,11 +21,11 @@
     </div>
     <div class="form-group">
       <label for="exampleTextarea">Parental genotype: </label>
-      <textarea class="form-control" id="POG" rows="1" name"pog"></textarea>
+      <input type="text" class="form-control" id="pog" name="pog">
     </div>
     <div class="form-group">
       <label for="exampleTextarea">Marental genotype: </label>
-      <textarea class="form-control" id="PTG" rows="1" name"ptg"></textarea>
+      <input type="text" class="form-control" id="ptg" name="ptg">
     </div>
     <button type="submit" class="btn btn-primary">Cross</button>
   </form>
@@ -56,3 +56,6 @@
     </tbody>
   </table>
 </div>
+<h5><% gene %></h5>
+<h5><% pog %></h5>
+<h5><% ptg %></h5>
