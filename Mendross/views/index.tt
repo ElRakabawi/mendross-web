@@ -38,8 +38,8 @@
     <thead>
       <tr>
         <th>#</th>
-        <th><% $POG[0] %></th>
-        <th><% $POG[1] %></th>
+        <th><% rows[0][1] %></th>
+        <th><% rows[0][2] %></th>
       </tr>
     </thead>
     <tbody>
@@ -59,3 +59,6 @@
 <h5><% genes %></h5>
 <h5><% p_one %></h5>
 <h5><% p_two %></h5>
+<h5><% rows %></h5>
+<h5><% rows_two %></h5>
+<h5><% rows_three %></h5>

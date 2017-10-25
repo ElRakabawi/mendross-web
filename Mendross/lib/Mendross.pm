@@ -35,13 +35,9 @@ post '/cross' => sub {
     }
   }
 
-  my $rows = [
-      #header rows
-      ["  ","$POG[0]", "$POG[1]",],
-      #rows
-      [ "$PTG[0]", $PTG[0].$POG[0], $PTG[0].$POG[1] ],
-      [ "$PTG[1]", $PTG[1].$POG[0], $PTG[1].$POG[1] ],
-      ];
+  my @rows = (["  ","$POG[0]", "$POG[1]"]);
+  my @rows_two =([ "$PTG[0]", $PTG[0].$POG[0], $PTG[0].$POG[1]]);
+  my @rows_three = ([ "$PTG[1]", $PTG[1].$POG[0], $PTG[1].$POG[1]]);
 
 
   # END #
@@ -52,6 +48,9 @@ post '/cross' => sub {
       'genes' => $genes,
       'p_one' => $p_one,
       'p_two' => $p_two,
+      'rows' => @rows,
+      'rows_two' => @rows_two,
+      'rows_three' => @rows_three
    };
 
 };
