@@ -29,36 +29,5 @@
     </div>
     <button type="submit" class="btn btn-primary">Cross</button>
   </form>
-
-  <center>
-      <p class="h3">Punett square</p>
-  </center>
-
-  <table id="datatable" class="table table-hover table-striped table-bordered">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th><% rows[0][1] %></th>
-        <th><% rows[0][2] %></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><% $PTG[0] %></th>
-        <td>AA</td>
-        <td>Aa</td>
-      </tr>
-      <tr>
-        <th scope="row"><% $PTG[1] %></th>
-        <td>Aa</td>
-        <td>aa</td>
-      </tr>
-    </tbody>
-  </table>
+<% punnet %>
 </div>
-<h5><% genes %></h5>
-<h5><% p_one %></h5>
-<h5><% p_two %></h5>
-<h5><% rows %></h5>
-<h5><% rows_two %></h5>
-<h5><% rows_three %></h5>
