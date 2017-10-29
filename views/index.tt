@@ -27,7 +27,32 @@
       <label for="exampleTextarea">Marental genotype: </label>
       <input type="text" class="form-control" id="ptg" name="ptg">
     </div>
-    <button type="submit" class="btn btn-primary">Cross</button>
+    <button id="btn" type="submit" class="btn btn-primary">Cross</button>
   </form>
-<% punnet %>
+  <div id="Pun_Sq">
+    <center>
+        <p class="h3">Punett square</p>
+    </center>
+    <table id="datatable" class="table table-hover table-striped table-bordered">
+      <thead>
+        <tr>
+          <th><% r00 %></th>
+          <th><% r01 %></th>
+          <th><% r02 %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><% r10 %></th>
+          <td><% r11 %></td>
+          <td><% r12 %></td>
+        </tr>
+        <tr>
+          <th scope="row"><% r20 %></th>
+          <td><% r21 %></td>
+          <td><% r22 %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
