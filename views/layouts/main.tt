@@ -6,8 +6,117 @@
   <title><% title %></title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/material.min.css">
+  <style>
+  form.ng-scope.ng-pristine.ng-valid {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+  }
+
+
+  table#datatable {
+      max-width: 50% !important;
+      margin-top: 30px !important;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+
+  p.h3 {
+      margin-top: 50px;
+  }
+
+  .wrapper {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3%;
+  }
+
+
+  .alert {
+      border-radius: 2px;
+      border: 0;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      display: block;
+      margin-bottom: 1rem;
+      padding: 1rem 1rem;
+      color: #9c27b0;
+      margin-top: 20px;
+      max-width: 220px;
+  }
+
+  button.btn.btn-dark.info {
+    height: 45px;
+    width: 200px;
+    padding-right: 25px;
+    margin-top: 50px;
+    opacity: 0.9;
+  }
+
+  h2.pntsqr {
+    font-size: 24px;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: table;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .table tbody th {
+    font-size: 1rem;
+  }
+
+  .table tbody td {
+    font-size: 1rem;
+  }
+
+  .table thead th {
+    font-size: 1rem;
+  }
+
+  .dev {
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+
+  .lead {
+    color: rgba(0,0,0,0.5);
+    font-weight: 100;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    color: #9c27b0;
+    font-weight: bold;
+  }
+
+  .text {
+    color: rgba(255,255,255,0.8);
+    font-weight: 100;
+  }
+
+  .bg-dark {
+    background-color: #404040;
+  }
+
+  .text-white {
+    margin-top: 10px;
+  }
+
+  button.btn.btn-dark.info {
+    margin-top: 0px;
+  }
+  </style>
 </head>
 
 

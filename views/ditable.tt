@@ -1,3 +1,4 @@
+<h2 class="pntsqr">Punette square for this dihybrid cross: </h2>
 <table id="datatable" class="table table-hover bordered">
   <thead>
     <tr>
@@ -39,3 +40,14 @@
     </tr>
   </tbody>
 </table>
+
+<footer>
+  <center>
+    <a href="/">
+      <button class="btn btn-dark info">
+        <span class="carousel-control-prev-icon"></span>
+        <span>Back to home</span>
+      </button>
+    </a>
+  </center>
+</footer>
