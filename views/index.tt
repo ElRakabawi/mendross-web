@@ -54,6 +54,48 @@
         </tr>
       </tbody>
     </table>
+
     <h1><% ifWorked %></h1>
+    <table id="datatable" class="table table-hover bordered">
+      <thead>
+        <tr>
+          <th><% r00 %></th>
+          <th><% r01 %></th>
+          <th><% r02 %></th>
+          <th><% r03 %></th>
+          <th><% r04 %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><% r10 %></th>
+          <td><% r11 %></td>
+          <td><% r12 %></td>
+          <td><% r13 %></td>
+          <td><% r14 %></td>
+        </tr>
+        <tr>
+          <th scope="row"><% r20 %></th>
+          <td><% r21 %></td>
+          <td><% r22 %></td>
+          <td><% r23 %></td>
+          <td><% r24 %></td>
+        </tr>
+        <tr>
+          <th scope="row"><% r30 %></th>
+          <td><% r31 %></td>
+          <td><% r32 %></td>
+          <td><% r33 %></td>
+          <td><% r34 %></td>
+        </tr>
+        <tr>
+          <th scope="row"><% r40 %></th>
+          <td><% r41 %></td>
+          <td><% r42 %></td>
+          <td><% r43 %></td>
+          <td><% r44 %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
