@@ -42,8 +42,8 @@ post '/cross' => sub {
         ];
 
 
-    #Pushing to the template 'index'
-      template 'index' => {
+    #Pushing to the template 'monotable.tt'
+      template 'monotable' => {
         'r00' => $rows->[0][0],
         'r01' => $rows->[0][1],
         'r02' => $rows->[0][2],
@@ -103,8 +103,8 @@ post '/cross' => sub {
 
 
 
-    #Pushing to the template 'index'
-      template 'index' => {
+    #Pushing to the template 'ditable.tt'
+      template 'ditable' => {
         'r00' => $rows->[0][0],
         'r01' => $rows->[0][1],
         'r02' => $rows->[0][2],
@@ -271,8 +271,8 @@ post '/cross' => sub {
 
     ];
 
-    #Pushing to the template 'index'
-      template 'index' => {
+    #Pushing to the template 'tritable.tt'
+      template 'tritable' => {
         'r00' => $rows->[0][0],
         'r01' => $rows->[0][1],
         'r02' => $rows->[0][2],

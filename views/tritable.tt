@@ -1,0 +1,105 @@
+<table id="datatable" class="table table-hover bordered">
+  <thead>
+    <tr>
+      <th><% r00 %></th>
+      <th><% r01 %></th>
+      <th><% r02 %></th>
+      <th><% r03 %></th>
+      <th><% r04 %></th>
+      <th><% r05 %></th>
+      <th><% r06 %></th>
+      <th><% r07 %></th>
+      <th><% r08 %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><% r10 %></th>
+      <th><% r11 %></th>
+      <th><% r12 %></th>
+      <th><% r13 %></th>
+      <th><% r14 %></th>
+      <th><% r15 %></th>
+      <th><% r16 %></th>
+      <th><% r17 %></th>
+      <th><% r18 %></th>
+    </tr>
+    <tr>
+      <th scope="row"><% r20 %></th>
+      <td><% r21 %></td>
+      <td><% r22 %></td>
+      <td><% r23 %></td>
+      <td><% r24 %></td>
+      <td><% r25 %></td>
+      <td><% r26 %></td>
+      <td><% r27 %></td>
+      <td><% r28 %></td>
+    </tr>
+    <tr>
+      <th scope="row"><% r30 %></th>
+      <td><% r31 %></td>
+      <td><% r32 %></td>
+      <td><% r33 %></td>
+      <td><% r34 %></td>
+      <td><% r35 %></td>
+      <td><% r36 %></td>
+      <td><% r37 %></td>
+      <td><% r38 %></td>
+    </tr>
+    <tr>
+      <th scope="row"><% r40 %></th>
+      <td><% r41 %></td>
+      <td><% r42 %></td>
+      <td><% r43 %></td>
+      <td><% r44 %></td>
+      <td><% r45 %></td>
+      <td><% r46 %></td>
+      <td><% r47 %></td>
+      <td><% r48 %></td>
+    </tr>
+    <tr>
+      <th scope="row"><% r50 %></th>
+      <th><% r51 %></th>
+      <th><% r52 %></th>
+      <th><% r53 %></th>
+      <th><% r54 %></th>
+      <th><% r55 %></th>
+      <th><% r56 %></th>
+      <th><% r57 %></th>
+      <th><% r58 %></th>
+    </tr>
+    <tr>
+      <th scope="row"><% r60 %></th>
+      <th><% r61 %></th>
+      <th><% r62 %></th>
+      <th><% r63 %></th>
+      <th><% r64 %></th>
+      <th><% r65 %></th>
+      <th><% r66 %></th>
+      <th><% r67 %></th>
+      <th><% r68 %></th>
+    </tr>
+    <tr>
+      <th scope="row"><% r70 %></th>
+      <th><% r71 %></th>
+      <th><% r72 %></th>
+      <th><% r73 %></th>
+      <th><% r74 %></th>
+      <th><% r75 %></th>
+      <th><% r76 %></th>
+      <th><% r77 %></th>
+      <th><% r78 %></th>
+    </tr>
+    <tr>
+      <th scope="row"><% r80 %></th>
+      <th><% r81 %></th>
+      <th><% r82 %></th>
+      <th><% r83 %></th>
+      <th><% r84 %></th>
+      <th><% r85 %></th>
+      <th><% r86 %></th>
+      <th><% r87 %></th>
+      <th><% r88 %></th>
+    </tr>
+  </tbody>
+</table>
