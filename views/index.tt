@@ -33,7 +33,7 @@
     <center>
         <p class="h3">Punett square</p>
     </center>
-    <table id="datatable" class="table table-hover table-striped table-bordered">
+    <table id="datatable" class="table table-hover table-inverse">
       <thead>
         <tr>
           <th><% r00 %></th>
@@ -54,5 +54,6 @@
         </tr>
       </tbody>
     </table>
+    <h1><% ifWorked %></h1>
   </div>
 </div>
