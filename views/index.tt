@@ -3,11 +3,11 @@
     <div class="bg-dark p-4">
       <h4 class="text-white">THE STORY</h4>
       <span class="text">I'm a biotechnological sciences student at <a target="_blank" href="http://msa.edu.eg">MSA university</a>. while taking a genetics course, I came to meet the basic <a target="_blank" href="https://en.wikipedia.org/wiki/Mendelian_inheritance">mendelian inheritance</a> <a target="_blank" href="https://en.wikipedia.org/wiki/Punnett_square">punnett square</a>.
-      Oneday I encountered a problem solving a trihybrid crossing problem, I Googled a punnett square tool online but found nothing.</span>
+      Oneday I encountered a problem solving a trihybrid crossing problem, I Googled a punnett square tool online but found nothing. </span>
 
       <h4 class="text-white">About Mendross</h4>
       <span class="text">Mendross is an open-source online tool that compute Mono, Di and Trihybrid cross using punnett square. It's written in Perl and built on <a target="_blank" href="http://perldancer.org">Perldancer</a>. The user interface uses Materialized(Material-UI) Bootstrap as it's CSS framework.
-      You can check the source code <a target="_blank" href="https://github.com/ElRakabawi/Mendross">here</a> and the web version <a target="_blank" href="https://github.com/ElRakabawi/Mendross-web">here</a></span>
+      You can check the source code <a target="_blank" href="https://github.com/ElRakabawi/Mendross">here</a> and the web version <a target="_blank" href="https://github.com/ElRakabawi/Mendross-web">here</a> <br  /> <br  />Developed by <a target="_blank" href="https://facebook.com/melrakabawi">Muhammed ElRakabawi</a></span>
     </div>
   </div>
 </div>
@@ -49,7 +49,4 @@
     <span class="carousel-control-next-icon"></span>
     <span>About mendross</span>
   </button>
-  <footer>
-    <span class="dev">Developed by <a target="_blank" href="https://facebook.com/melrakabawi">ElRakabawi</a></span>
-  </footer>
 </center>
