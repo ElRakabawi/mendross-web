@@ -120,6 +120,16 @@
   button.btn.btn-dark.info {
     margin-top: 0px;
   }
+
+  th {
+    font-weight: 500 !important;
+    color: rgba(0,0,0,.54) !important;
+  }
+
+  .MonoTa {
+    width: 20% !important;
+  }
+
   </style>
 </head>
 
