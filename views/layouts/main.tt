@@ -3,6 +3,10 @@
 <head>
   <meta charset="<% settings.charset %>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="An Open-source online tool that compute Mono, Di and Trihybrid cross using punnett square. It's written in Perl and built on PerlDancer2.">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="keywords" content="punnett, square, monohybrid, Dihybrid, trihybrid">
+  <meta name="author" content="Muhammed ElRakabawi">
   <title><% title %></title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
