@@ -20,6 +20,32 @@ post '/cross' => sub {
   ##############################################################
 
 
+  #Formatting function for displaying offspring genotype properly
+  sub format_swap {
+  my ($geno) = @_;
+  my $new_geno;
+
+  my $len = length($geno);
+
+  for(my $i=0; $i<$len; $i+=2){
+    my $chunk = substr($geno, $i, 2);
+    my $first = substr($chunk, 0, 1);
+    my $second = substr($chunk, 1, 1);
+
+    if($second lt $first){
+      my $temp = $second;
+      $second = $first;
+      $first = $temp;
+      $chunk = $first.$second;
+    }
+
+     $new_geno .= $chunk;
+  }
+
+  return $new_geno;
+  }
+
+
   my $len_one = length($p_one); #length of Parent one genotype
   my $len_two = length($p_two); #length of Parent two genotype
   my $alleles = $genes*2; #Number of alleles
@@ -43,6 +69,12 @@ post '/cross' => sub {
           [ $PTG[0], $PTG[0].$POG[0], $PTG[0].$POG[1] ],
           [ $PTG[1], $PTG[1].$POG[0], $PTG[1].$POG[1] ]
           ];
+
+      for(my $y=1; $y<3; $y++){
+        for(my $z=1; $z<3; $z++){
+          $rows->[$y][$z] = format_swap($rows->[$y][$z]);
+        }
+      }
 
 
       #Pushing to the template 'monotable.tt'
@@ -102,6 +134,13 @@ post '/cross' => sub {
           $PTG[3][0].$POG[2][0].$PTG[3][1].$POG[2][1], $PTG[3][0].$POG[3][0].$PTG[3][1].$POG[3][1] ], #row 4
 
         ];
+
+
+        for(my $y=1; $y<5; $y++){
+          for(my $z=1; $z<5; $z++){
+            $rows->[$y][$z] = format_swap($rows->[$y][$z]);
+          }
+        }
 
 
 
@@ -273,6 +312,13 @@ post '/cross' => sub {
         ],
 
       ];
+
+
+      for(my $y=1; $y<9; $y++){
+        for(my $z=1; $z<9; $z++){
+          $rows->[$y][$z] = format_swap($rows->[$y][$z]);
+        }
+      }
 
       #Pushing to the template 'tritable.tt'
         template 'tritable' => {
