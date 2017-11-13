@@ -1,6 +1,6 @@
 <h2 class="pntsqr">Punette square for this trihybrid cross: </h2>
 <table id="datatable" class="table table-hover bordered">
-  <thead>
+  <tdead>
     <tr>
       <th><% r00 %></th>
       <th><% r01 %></th>
@@ -12,18 +12,18 @@
       <th><% r07 %></th>
       <th><% r08 %></th>
     </tr>
-  </thead>
+  </tdead>
   <tbody>
     <tr>
       <th scope="row"><% r10 %></th>
-      <th><% r11 %></th>
-      <th><% r12 %></th>
-      <th><% r13 %></th>
-      <th><% r14 %></th>
-      <th><% r15 %></th>
-      <th><% r16 %></th>
-      <th><% r17 %></th>
-      <th><% r18 %></th>
+      <td><% r11 %></td>
+      <td><% r12 %></td>
+      <td><% r13 %></td>
+      <td><% r14 %></td>
+      <td><% r15 %></td>
+      <td><% r16 %></td>
+      <td><% r17 %></td>
+      <td><% r18 %></td>
     </tr>
     <tr>
       <th scope="row"><% r20 %></th>
@@ -60,47 +60,47 @@
     </tr>
     <tr>
       <th scope="row"><% r50 %></th>
-      <th><% r51 %></th>
-      <th><% r52 %></th>
-      <th><% r53 %></th>
-      <th><% r54 %></th>
-      <th><% r55 %></th>
-      <th><% r56 %></th>
-      <th><% r57 %></th>
-      <th><% r58 %></th>
+      <td><% r51 %></td>
+      <td><% r52 %></td>
+      <td><% r53 %></td>
+      <td><% r54 %></td>
+      <td><% r55 %></td>
+      <td><% r56 %></td>
+      <td><% r57 %></td>
+      <td><% r58 %></td>
     </tr>
     <tr>
       <th scope="row"><% r60 %></th>
-      <th><% r61 %></th>
-      <th><% r62 %></th>
-      <th><% r63 %></th>
-      <th><% r64 %></th>
-      <th><% r65 %></th>
-      <th><% r66 %></th>
-      <th><% r67 %></th>
-      <th><% r68 %></th>
+      <td><% r61 %></td>
+      <td><% r62 %></td>
+      <td><% r63 %></td>
+      <td><% r64 %></td>
+      <td><% r65 %></td>
+      <td><% r66 %></td>
+      <td><% r67 %></td>
+      <td><% r68 %></td>
     </tr>
     <tr>
       <th scope="row"><% r70 %></th>
-      <th><% r71 %></th>
-      <th><% r72 %></th>
-      <th><% r73 %></th>
-      <th><% r74 %></th>
-      <th><% r75 %></th>
-      <th><% r76 %></th>
-      <th><% r77 %></th>
-      <th><% r78 %></th>
+      <td><% r71 %></td>
+      <td><% r72 %></td>
+      <td><% r73 %></td>
+      <td><% r74 %></td>
+      <td><% r75 %></td>
+      <td><% r76 %></td>
+      <td><% r77 %></td>
+      <td><% r78 %></td>
     </tr>
     <tr>
       <th scope="row"><% r80 %></th>
-      <th><% r81 %></th>
-      <th><% r82 %></th>
-      <th><% r83 %></th>
-      <th><% r84 %></th>
-      <th><% r85 %></th>
-      <th><% r86 %></th>
-      <th><% r87 %></th>
-      <th><% r88 %></th>
+      <td><% r81 %></td>
+      <td><% r82 %></td>
+      <td><% r83 %></td>
+      <td><% r84 %></td>
+      <td><% r85 %></td>
+      <td><% r86 %></td>
+      <td><% r87 %></td>
+      <td><% r88 %></td>
     </tr>
   </tbody>
 </table>

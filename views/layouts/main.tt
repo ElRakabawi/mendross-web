@@ -62,14 +62,14 @@
   }
 
   h2.pntsqr {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 100;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     display: table;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .table tbody th {
@@ -96,6 +96,8 @@
   .lead {
     color: rgba(0,0,0,0.5);
     font-weight: 100;
+    margin-top: -8px;
+    padding-left: 3px;
   }
 
   .title {
@@ -123,7 +125,7 @@
 
   th {
     font-weight: 500 !important;
-    color: rgba(0,0,0,.54) !important;
+    color: #9c27b0 !important;
   }
 
   .MonoTa {
@@ -153,7 +155,7 @@
           <div class="row">
               <div class="col-md-12">
                   <img src="logo.png" width="350px" style="margin-top: 30px"></img>
-                  <p class="lead">Ready for crossing!</p>
+                  <p class="lead">The punnett square calculator</p>
 
               </div>
           </div>
