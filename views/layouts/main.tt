@@ -11,6 +11,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/material.min.css">
+  <meta property="og:url"                content="http://mendross.com" />
+  <meta property="og:title"              content="Mendross" />
+  <meta property="og:description"        content="An open-source online tool that compute Mono, Di and Trihybrid cross using punnett square. It's written in Perl and built on PerlDancer2." />
+  <meta property="og:image"              content="logo.png" />
   <style>
   form.ng-scope.ng-pristine.ng-valid {
       max-width: 70%;
