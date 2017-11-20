@@ -41,6 +41,17 @@
   </tbody>
 </table>
 
+<center>
+  <p>Genotype<p>
+  <h3><% one_holder %>:<% two_holder %>:<% thr_holder %>:<% fou_holder %>:<% fiv_holder %>:<% six_holder %>:<% sev_holder %>:<% eig_holder %>:<% nin_holder %></h3>
+  <h3><% gone %>(<% per_gone %>%):<% gtwo %>(<% per_gtwo %>%):<% gthr %>(<% per_gthr %>%):<% gfou %>(<% per_gfou %>%):<% gfiv %>(<% per_gfiv %>%):<% gsix %>(<% per_gsix %>%):<% gsev %>(<% per_gsev %>%):<% geig %>(<% per_geig %>%):<% gnin %>(<% per_gnin %>%)</h3>
+  <p>Phenotype</p>
+  <h3>dom-dom: <% dom_dom %>(<% per_one %>%)</h3>
+  <h3>dom-rec: <% dom_rec %>(<% per_two %>%)</h3>
+  <h3>rec-dom: <% rec_dom %>(<% per_three %>%)</h3>
+  <h3>rec-rec: <% rec_rec %>(<% per_four %>%)</h3>
+</center>
+
 <footer>
   <center>
     <a href="/">

@@ -21,6 +21,16 @@
   </tbody>
 </table>
 
+<center>
+  <p>Genotype</p>
+  <h3><% dom_holder %>:<% het_holder %>:<% rec_holder %></h3>
+  <h3><% dom %>(<% per_dom %>%):<% het %>(<% per_het %>%):<% rec %>(<% per_rec %>%)</h3>
+  <p>Phenotype</p>
+  <h3><% trait_one %>(<% per_trait_one %>%)</h3>
+  <h3><% trait_two %>(<% per_trait_two %>%)</h3>
+</center>
+
+
 <footer>
   <center>
     <a href="/">

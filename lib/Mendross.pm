@@ -76,6 +76,47 @@ post '/cross' => sub {
         }
       }
 
+      #Derefrencing the multidimensional array into a one-dimensional array
+      my @arr = ();
+      for my $val (@$rows) {
+        for ( 1 .. $#$val ) {
+          push @arr, $val->[$_];
+        }
+      }
+
+      my $arr_len = scalar(@arr);
+      my $dom_holder;
+      my $het_holder;
+      my $rec_holder;
+
+      for(my $i=0; $i<$arr_len; $i++){
+        if($arr[$i] =~ m/([A-Z])([A-Z])/){
+          $dom_holder = $arr[$i];
+        }
+        if($arr[$i] =~ m/([A-Z])([a-z])/){
+          $het_holder = $arr[$i];
+        }
+        if($arr[$i] =~ m/([a-z])([a-z])/){
+          $rec_holder = $arr[$i];
+        }
+      }
+
+      #Regular expressions to count genotypic ratios
+      my $dom = grep(/([A-Z])([A-Z])/, @arr); #i.e: AA
+      my $het = grep(/([A-Z])([a-z])/, @arr); #i.e: Aa
+      my $rec = grep(/([a-z])([a-z])/, @arr); #i.e: aa
+
+      #Percentages of genotypes
+      my $per_dom = ($dom/4)*100;
+      my $per_het = ($het/4)*100;
+      my $per_rec = ($rec/4)*100;
+
+      #Regular expressions to count phenotypic ratios
+      my $trait_one = grep(/([A-Z])([A-Z])|([A-Z])([a-z])/, @arr); #i.e: AA or Aa
+      my $per_trait_one = ($trait_one/4)*100;                             #to get the percentage
+      my $trait_two = grep(/([a-z])([a-z])/, @arr);                #i.e: aa
+      my $per_trait_two = ($trait_two/4)*100;
+
 
       #Pushing to the template 'monotable.tt'
         template 'monotable' => {
@@ -87,9 +128,28 @@ post '/cross' => sub {
           'r12' => $rows->[1][2],
           'r20' => $rows->[2][0],
           'r21' => $rows->[2][1],
-          'r22' => $rows->[2][2]
+          'r22' => $rows->[2][2],
+
+          'dom_holder' => $dom_holder,
+          'het_holder' => $het_holder,
+          'rec_holder' => $rec_holder,
+
+          'dom' => $dom,
+          'het' => $het,
+          'rec' => $rec,
+
+          'per_dom' => $per_dom,
+          'per_het' => $per_het,
+          'per_rec' => $per_rec,
+
+          'trait_one' => $trait_one,
+          'trait_two' => $trait_two,
+          'per_trait_one' => $per_trait_one,
+          'per_trait_two' => $per_trait_two
+
        };
     }
+
     # END #
 
     #Computation of Dihybrid crossing
@@ -142,7 +202,94 @@ post '/cross' => sub {
           }
         }
 
+        #Derefrencing the multidimensional array into a one-dimensional array
+        my @arr = ();
+        for my $val (@$rows) {
+          for ( 1 .. $#$val ) {
+            push @arr, $val->[$_];
+          }
+        }
 
+        my $arr_len = scalar(@arr);
+        my $one_holder;
+        my $two_holder;
+        my $thr_holder;
+        my $fou_holder;
+        my $fiv_holder;
+        my $six_holder;
+        my $sev_holder;
+        my $eig_holder;
+        my $nin_holder;
+
+
+        for(my $i=0; $i<$arr_len; $i++){
+          if($arr[$i] =~ m/([A-Z])([A-Z])([A-Z])([A-Z])/){  #XXXX
+            $one_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([A-Z])([a-z])([A-Z])([a-z])/){  #XxXx
+            $two_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([A-Z])([A-Z])([A-Z])([a-z])/){  #XXXx
+            $thr_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([A-Z])([a-z])([A-Z])([A-Z])/){  #XxXX
+            $fou_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([A-Z])([A-Z])([a-z])([a-z])/){  #XXxx
+            $fiv_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([A-Z])([a-z])([a-z])([a-z])/){  #Xxxx
+            $six_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([a-z])([a-z])([A-Z])([a-z])/){  #xxXx
+            $sev_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([a-z])([a-z])([A-Z])([A-Z])/){  #xxXX
+            $eig_holder = $arr[$i];
+          }
+          if($arr[$i] =~ m/([a-z])([a-z])([a-z])([a-z])/){ #xxxx
+            $nin_holder = $arr[$i];
+          }
+        }
+
+        #Regular expressions to count genotypic ratios
+        #Dom-Dom
+        my $gone = grep(/([A-Z])([A-Z])([A-Z])([A-Z])/, @arr); #i.e: XXXX
+        my $gtwo = grep(/([A-Z])([a-z])([A-Z])([a-z])/, @arr); #i.e: XxXx
+        my $gthr = grep(/([A-Z])([A-Z])([A-Z])([a-z])/, @arr); #i.e: XXXx
+        my $gfou = grep(/([A-Z])([a-z])([A-Z])([A-Z])/, @arr); #i.e: XxXX
+        #Dom-Rec
+        my $gfiv = grep(/([A-Z])([A-Z])([a-z])([a-z])/, @arr); #i.e: XXxx
+        my $gsix = grep(/([A-Z])([a-z])([a-z])([a-z])/, @arr); #i.e: Xxxx
+        #Rec-Dom
+        my $gsev = grep(/([a-z])([a-z])([A-Z])([a-z])/, @arr); #i.e: xxXx
+        my $geig = grep(/([a-z])([a-z])([A-Z])([A-Z])/, @arr); #i.e: xxXX
+        #Rec-Rec
+        my $gnin = grep(/([a-z])([a-z])([a-z])([a-z])/, @arr); #i.e: xxxx
+
+        #Percentages of genotypes
+        my $per_gone = ($gone/16)*100;
+        my $per_gtwo = ($gtwo/16)*100;
+        my $per_gthr = ($gthr/16)*100;
+        my $per_gfou = ($gfou/16)*100;
+        my $per_gfiv = ($gfiv/16)*100;
+        my $per_gsix = ($gsix/16)*100;
+        my $per_gsev = ($gsev/16)*100;
+        my $per_geig = ($geig/16)*100;
+        my $per_gnin = ($gnin/16)*100;
+
+        #Regular expressions to count phenotypic ratios
+        my $dom_dom = grep(/([A-Z])([A-Z])([A-Z])([A-Z])|([A-Z])([a-z])([A-Z])([a-z])|([A-Z])([A-Z])([A-Z])([a-z])|([A-Z])([a-z])([A-Z])([A-Z])/, @arr); #i.e: XXXX or XxXx or XXXx or XxXX
+        my $per_one = ($dom_dom/16)*100;                             #to get the percentage
+
+        my $dom_rec = grep(/([A-Z])([A-Z])([a-z])([a-z])|([A-Z])([a-z])([a-z])([a-z])/, @arr);                #i.e: XXxx or Xxxx
+        my $per_two = ($dom_rec/16)*100;
+
+        my $rec_dom = grep(/([a-z])([a-z])([A-Z])([a-z])|([a-z])([a-z])([A-Z])([A-Z])/, @arr);                #i.e: xxXx or xxXX
+        my $per_three = ($rec_dom/16)*100;
+
+        my $rec_rec = grep(/([a-z])([a-z])([a-z])([a-z])/, @arr);                #i.e: xxxx
+        my $per_four = ($rec_rec/16)*100;
 
 
       #Pushing to the template 'ditable.tt'
@@ -176,6 +323,47 @@ post '/cross' => sub {
           'r42' => $rows->[4][2],
           'r43' => $rows->[4][3],
           'r44' => $rows->[4][4],
+
+          'one_holder' => $one_holder,
+          'two_holder' => $two_holder,
+          'thr_holder' => $thr_holder,
+          'fou_holder' => $fou_holder,
+          'fiv_holder' => $fiv_holder,
+          'six_holder' => $six_holder,
+          'sev_holder' => $sev_holder,
+          'eig_holder' => $eig_holder,
+          'nin_holder' => $nin_holder,
+
+          'gone' => $gone,
+          'gtwo' => $gtwo,
+          'gthr' => $gthr,
+          'gfou' => $gfou,
+          'gfiv' => $gfiv,
+          'gsix' => $gsix,
+          'gsev' => $gsev,
+          'geig' => $geig,
+          'gnin' => $gnin,
+
+          'per_gone' => $per_gone,
+          'per_gtwo' => $per_gtwo,
+          'per_gthr' => $per_gthr,
+          'per_gfou' => $per_gfou,
+          'per_gfiv' => $per_gfiv,
+          'per_gsix' => $per_gsix,
+          'per_gsev' => $per_gsev,
+          'per_geig' => $per_geig,
+          'per_gnin' => $per_gnin,
+
+          'dom_dom' => $dom_dom,
+          'dom_rec' => $dom_rec,
+          'rec_dom' => $rec_dom,
+          'rec_rec' => $rec_rec,
+
+          'per_one' => $per_one,
+          'per_two' => $per_two,
+          'per_three' => $per_three,
+          'per_four' => $per_four,
+
 
        };
     }
