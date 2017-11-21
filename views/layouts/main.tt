@@ -136,6 +136,13 @@
     width: 20% !important;
   }
 
+  button.btn.btn-dark.info {
+    box-shadow: none !important;
+    cursor: pointer;
+    border-radius: 999px;
+
+  }
+
   </style>
 </head>
 
