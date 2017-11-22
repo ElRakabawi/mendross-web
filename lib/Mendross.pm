@@ -136,6 +136,37 @@ post '/cross' => sub {
       my $per_trait_two = ($trait_two/4)*100;
 
 
+
+      #Extra layer of pretty output for Genotype/Phenotype ratios
+      my $one = $dom_holder.':'.$dom.'('.$per_dom.')';
+      my $two = $het_holder.':'.$het.'('.$per_het.')';
+      my $three = $rec_holder.':'.$rec.'('.$per_rec.')';
+
+      my $four = $dom_one.':'.$trait_one.'('.$per_trait_one.')';
+      my $five = $rec_one.':'.$trait_two.'('.$per_trait_two.')';
+
+      if($dom == 0){
+        $one = '';
+      }
+
+      if($het == 0){
+        $two = '';
+      }
+
+      if($rec == 0){
+        $three = '';
+      }
+
+      if($trait_one == 0){
+        $four = '';
+      }
+
+      if($trait_two == 0){
+        $five = '';
+      }
+
+
+
       #Pushing to the template 'monotable.tt'
         template 'monotable' => {
           'r00' => $rows->[0][0],
@@ -168,12 +199,11 @@ post '/cross' => sub {
           'dom_one' => $dom_one,
           'rec_one' => $rec_one,
 
-          'one' => $dom_holder.':'.$dom.'('.$per_dom.')',
-          'two' => $het_holder.':'.$het.'('.$per_het.')',
-          'three' => $rec_holder.':'.$rec.'('.$per_rec.')',
-
-          'four' => $dom_one.':'.$trait_one.'('.$per_trait_one.')',
-          'five' => $rec_one.':'.$trait_two.'('.$per_trait_two.')',
+          'one' => $one,
+          'two' => $two,
+          'three' => $three,
+          'four' => $four,
+          'five' => $five
 
        };
     }
@@ -395,7 +425,23 @@ post '/cross' => sub {
           'dom_one' => $dom_one,
           'rec_one' => $rec_one,
           'dom_two' => $dom_two,
-          'rec_two' => $rec_two
+          'rec_two' => $rec_two,
+
+          'one' => $one_holder.': '.$gone.'('.$per_gone.'%)',
+          'two' => $two_holder.': '.$gtwo.'('.$per_gtwo.'%)',
+          'three' => $thr_holder.': '.$gthr.'('.$per_gthr.'%)',
+          'four' => $fou_holder.': '.$gfou.'('.$per_gfou.'%)',
+          'five' => $fiv_holder.': '.$gfiv.'('.$per_gfiv.'%)',
+          'six' => $six_holder.': '.$gsix.'('.$per_gsix.'%)',
+          'seven' => $sev_holder.': '.$gsev.'('.$per_gsev.'%)',
+          'eight' => $eig_holder.': '.$geig.'('.$per_geig.'%)',
+          'nine' => $nin_holder.': '.$gnin.'('.$per_gnin.'%)',
+
+
+          'ten' => $dom_one.'-'.$dom_two.': '.$dom_dom.'('.$per_one.'%)',
+          'eleven' => $dom_one.'-'.$rec_two.': '.$dom_rec.'('.$per_two.'%)',
+          'twelve' => $rec_one.'-'.$dom_two.': '.$rec_dom.'('.$per_three.'%)',
+          'thirteen' => $rec_one.'-'.$rec_two.': '.$rec_rec.'('.$per_four.'%)'
 
 
        };
