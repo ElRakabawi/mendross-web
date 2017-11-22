@@ -166,7 +166,14 @@ post '/cross' => sub {
           'per_trait_two' => $per_trait_two,
 
           'dom_one' => $dom_one,
-          'rec_one' => $rec_one
+          'rec_one' => $rec_one,
+
+          'one' => $dom_holder.':'.$dom.'('.$per_dom.')',
+          'two' => $het_holder.':'.$het.'('.$per_het.')',
+          'three' => $rec_holder.':'.$rec.'('.$per_rec.')',
+
+          'four' => $dom_one.':'.$trait_one.'('.$per_trait_one.')',
+          'five' => $rec_one.':'.$trait_two.'('.$per_trait_two.')',
 
        };
     }
