@@ -543,7 +543,6 @@ post '/cross' => sub {
       $n++;
     }
 
-
     my $rows = [
         #header rows
               ["  ",
@@ -777,30 +776,42 @@ post '/cross' => sub {
         }
       }
 
+      #rounding percentage to 1 digit after decimal
+      my $places = 1;
+      my $factor = 10**$places;
+
       #Regular expressions to count phenotypic ratios
       my $dom_dom_dom = grep(/([A-Z])([A-Z])([A-Z])([A-Z])([A-Z])([A-Z])|([A-Z])([A-Z])([A-Z])([A-Z])([A-Z])([a-z])|([A-Z])([A-Z])([A-Z])([a-z])([A-Z])([A-Z])|([A-Z])([A-Z])([A-Z])([a-z])([A-Z])([a-z])|([A-Z])([a-z])([A-Z])([A-Z])([A-Z])([A-Z])|([A-Z])([a-z])([A-Z])([A-Z])([A-Z])([a-z])|([A-Z])([a-z])([A-Z])([a-z])([A-Z])([A-Z])|([A-Z])([a-z])([A-Z])([a-z])([A-Z])([a-z])/, @arr); #i.e: 1 or 2 or 4 or 5 or 10 or 11 or 13 or 14
       my $per_one = ($dom_dom_dom/64)*100;  #to get the percentage
+      $per_one = int($per_one * $factor) / $factor;
 
       my $dom_dom_rec = grep(/([A-Z])([A-Z])([A-Z])([A-Z])([a-z])([a-z])|([A-Z])([A-Z])([A-Z])([a-z])([a-z])([a-z])|([A-Z])([a-z])([A-Z])([A-Z])([a-z])([a-z])|([A-Z])([a-z])([A-Z])([a-z])([a-z])([a-z])/, @arr); #i.e: 3 or 6 or 12 or 15
       my $per_two = ($dom_dom_rec/64)*100;
+      $per_two = int($per_two * $factor) / $factor;
 
       my $dom_rec_dom = grep(/([A-Z])([A-Z])([a-z])([a-z])([A-Z])([A-Z])|([A-Z])([A-Z])([a-z])([a-z])([A-Z])([a-z])|([A-Z])([a-z])([a-z])([a-z])([A-Z])([A-Z])|([A-Z])([a-z])([a-z])([a-z])([A-Z])([a-z])/, @arr); #i.e: 7 or 8 or 16 or 17
       my $per_three = ($dom_rec_dom/64)*100;
+      $per_three = int($per_three * $factor) / $factor;
 
       my $dom_rec_rec = grep(/([A-Z])([A-Z])([a-z])([a-z])([a-z])([a-z])|([A-Z])([a-z])([a-z])([a-z])([a-z])([a-z])/, @arr); #i.e: 9 or 18
       my $per_four = ($dom_rec_rec/64)*100;
+      $per_four = int($per_four * $factor) / $factor;
 
       my $rec_dom_dom = grep(/([a-z])([a-z])([A-Z])([A-Z])([A-Z])([A-Z])|([a-z])([a-z])([A-Z])([A-Z])([A-Z])([a-z])|([a-z])([a-z])([A-Z])([a-z])([A-Z])([A-Z])|([a-z])([a-z])([A-Z])([a-z])([A-Z])([a-z])/, @arr); #i.e: 19 or 20 or 22 or 23
       my $per_five = ($rec_dom_dom/64)*100;
+      $per_five = int($per_five * $factor) / $factor;
 
       my $rec_dom_rec = grep(/([a-z])([a-z])([A-Z])([A-Z])([a-z])([a-z])|([a-z])([a-z])([A-Z])([a-z])([a-z])([a-z])/, @arr); #i.e: 21 or 24
       my $per_six = ($rec_dom_rec/64)*100;
+      $per_six = int($per_six * $factor) / $factor;
 
       my $rec_rec_dom = grep(/([a-z])([a-z])([a-z])([a-z])([A-Z])([A-Z])|([a-z])([a-z])([a-z])([a-z])([A-Z])([a-z])/, @arr); #i.e: 25 or 26
       my $per_seven = ($rec_rec_dom/64)*100;
+      $per_seven = int($per_seven * $factor) / $factor;
 
       my $rec_rec_rec = grep(/([a-z])([a-z])([a-z])([a-z])([a-z])([a-z])/, @arr); #i.e: 27
       my $per_eight = ($rec_rec_rec/64)*100;
+      $per_eight = int($per_eight * $factor) / $factor;
 
       #Extra layer of pretty output for Genotype/Phenotype ratios
       my $one = $dom_one.'-'.$dom_two.'-'.$dom_thr.': '.$dom_dom_dom.'('.$per_one.'%)';
@@ -844,6 +855,7 @@ post '/cross' => sub {
       if($rec_rec_rec == 0){
         $eight = '';
       }
+
 
       #Pushing to the template 'tritable.tt'
         template 'tritable' => {

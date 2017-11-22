@@ -145,6 +145,7 @@
     box-shadow: none !important;
     cursor: pointer;
     border-radius: 999px;
+    margin-bottom: 50px;
 
   }
 
@@ -160,6 +161,7 @@
   .show-it {
     opacity: 1 !important;
   }
+
   </style>
 </head>
 
