@@ -9,10 +9,18 @@ get '/' => sub {
 };
 
 post '/cross' => sub {
-  my $genes = -1;
-  $genes = body_parameters->get('gene');
+  my $genes = body_parameters->get('gene');
   my $p_one = body_parameters->get('pog');
   my $p_two = body_parameters->get('ptg');
+  #Phenotype properties
+  my $dom_one = body_parameters->get('dom_one');
+  my $rec_one = body_parameters->get('rec_one');
+
+  my $dom_two = body_parameters->get('dom_two');
+  my $rec_two = body_parameters->get('rec_two');
+
+  my $dom_thr = body_parameters->get('dom_thr');
+  my $rec_thr = body_parameters->get('rec_thr');
 
 
   ##############################################################
@@ -48,7 +56,17 @@ post '/cross' => sub {
 
   my $len_one = length($p_one); #length of Parent one genotype
   my $len_two = length($p_two); #length of Parent two genotype
-  my $alleles = $genes*2; #Number of alleles
+  #Number of alleles
+  my $alleles = 0;
+  if($genes eq 'mono'){
+    $alleles = 2;
+  }
+  elsif($genes eq 'di'){
+    $alleles = 4;
+  }
+  elsif($genes eq 'tri'){
+    $alleles = 6;
+  }
 
   if($len_one >= 2 && $len_two >= 2 ){
 
@@ -58,7 +76,7 @@ post '/cross' => sub {
     my @PTS = (); #Parent two step
 
     #Computation of monohybrid crossing
-    if($genes == 1){
+    if($genes eq 'mono'){
       for(my $i=0; $i<$alleles; $i++){
         $POG[$i] = substr($p_one,$i,1);
         $PTG[$i] = substr($p_two,$i,1);
@@ -145,7 +163,10 @@ post '/cross' => sub {
           'trait_one' => $trait_one,
           'trait_two' => $trait_two,
           'per_trait_one' => $per_trait_one,
-          'per_trait_two' => $per_trait_two
+          'per_trait_two' => $per_trait_two,
+
+          'dom_one' => $dom_one,
+          'rec_one' => $rec_one
 
        };
     }
@@ -153,7 +174,7 @@ post '/cross' => sub {
     # END #
 
     #Computation of Dihybrid crossing
-    elsif ($genes == 2){
+    elsif ($genes eq 'di'){
       for(my $i=0; $i<$alleles; $i++){
         $POS[$i] = substr($p_one,$i,1);
         $PTS[$i] = substr($p_two,$i,1);
@@ -370,7 +391,7 @@ post '/cross' => sub {
     # END #
 
     #Computation of Trihybrid crossing
-    elsif($genes == 3) {
+    elsif($genes eq 'tri') {
     for(my $i=0; $i<$alleles; $i++){
       $POS[$i] = substr($p_one,$i,1);
       $PTS[$i] = substr($p_two,$i,1);

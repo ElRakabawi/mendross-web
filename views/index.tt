@@ -3,9 +3,10 @@
     <div class="form-group">
       <label for="exampleSelect1">Type of inheritance: </label>
       <select class="form-control" id="genes" name="gene">
-        <option value="1">Monohybrid</option>
-        <option value="2">Dihybrid</option>
-        <option value="3">Trihybrid</option>
+        <option disabled selected></option>
+        <option value="mono">Monohybrid</option>
+        <option value="di">Dihybrid</option>
+        <option value="tri">Trihybrid</option>
       </select>
     </div>
     <div class="form-group">
@@ -15,6 +16,32 @@
     <div class="form-group">
       <label for="exampleTextarea">Marental genotype: </label>
       <input type="text" class="form-control" id="ptg" name="ptg">
+    </div>
+    <div style="margin-top: 50px; margin-bottom: 30px">
+      <div class="mono di tri op">
+        <label for="exampleTextarea">Phenotype properties: </label>
+        <input type="text" class="form-control" name="dom_one" placeholder="First Dominant Trait (i.e Tall)"/>
+      </div>
+
+      <div class="mono di tri op">
+        <input type="text" class="form-control" name="rec_one" placeholder="First Recessive Trait (i.e Short)"/>
+      </div>
+
+      <div class="di tri op">
+      <input type="text" class="form-control" name="dom_two" placeholder="Second Dominant Trait"/>
+      </div>
+
+      <div class="di tri op">
+      <input type="text" class="form-control" name="rec_two" placeholder="Second Recessive Trait"/>
+      </div>
+
+      <div class="tri op">
+      <input type="text" class="form-control" name="dom_thr" placeholder="Third Dominant Trait"/>
+      </div>
+
+      <div class="tri op">
+      <input type="text" class="form-control" name="rec_thr" placeholder="Third Recessive Trait"/>
+      </div>
     </div>
     <button id="btn" type="submit" class="btn btn-primary">Cross</button>
   </form>
