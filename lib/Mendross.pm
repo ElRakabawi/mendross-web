@@ -385,6 +385,11 @@ post '/cross' => sub {
           'per_three' => $per_three,
           'per_four' => $per_four,
 
+          'dom_one' => $dom_one,
+          'rec_one' => $rec_one,
+          'dom_two' => $dom_two,
+          'rec_two' => $rec_two
+
 
        };
     }

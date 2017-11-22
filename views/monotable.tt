@@ -33,8 +33,8 @@
   <center style="max-width: 40%; margin-top: 40px">
     <p>Phenotype</p>
     <div class="progress">
-      <div class="progress-bar bg-success" role="progressbar" style="width: <% per_trait_one %>%" aria-valuenow="<% per_trait_one %>" aria-valuemin="0" aria-valuemax="100">Dominant trait: <% trait_one %>(<% per_trait_one %>%)</div>
-      <div class="progress-bar bg-info" role="progressbar" style="width: <% per_trait_two %>%" aria-valuenow="<% per_trait_two %>" aria-valuemin="0" aria-valuemax="100">Recessive trait: <% trait_two %>(<% per_trait_two %>%)</div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: <% per_trait_one %>%" aria-valuenow="<% per_trait_one %>" aria-valuemin="0" aria-valuemax="100"><% dom_one %>: <% trait_one %>(<% per_trait_one %>%)</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: <% per_trait_two %>%" aria-valuenow="<% per_trait_two %>" aria-valuemin="0" aria-valuemax="100"><% rec_one %>: <% trait_two %>(<% per_trait_two %>%)</div>
     </div>
   </center>
 </center>

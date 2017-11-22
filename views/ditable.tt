@@ -41,15 +41,31 @@
   </tbody>
 </table>
 
-<center>
-  <p>Genotype<p>
-  <h3><% one_holder %>:<% two_holder %>:<% thr_holder %>:<% fou_holder %>:<% fiv_holder %>:<% six_holder %>:<% sev_holder %>:<% eig_holder %>:<% nin_holder %></h3>
-  <h3><% gone %>(<% per_gone %>%):<% gtwo %>(<% per_gtwo %>%):<% gthr %>(<% per_gthr %>%):<% gfou %>(<% per_gfou %>%):<% gfiv %>(<% per_gfiv %>%):<% gsix %>(<% per_gsix %>%):<% gsev %>(<% per_gsev %>%):<% geig %>(<% per_geig %>%):<% gnin %>(<% per_gnin %>%)</h3>
-  <p>Phenotype</p>
-  <h3>dom-dom: <% dom_dom %>(<% per_one %>%)</h3>
-  <h3>dom-rec: <% dom_rec %>(<% per_two %>%)</h3>
-  <h3>rec-dom: <% rec_dom %>(<% per_three %>%)</h3>
-  <h3>rec-rec: <% rec_rec %>(<% per_four %>%)</h3>
+<center style="margin-bottom: 70px">
+  <center style="max-width: 70%; margin-top: 70px;">
+    <p>Genotype</p>
+    <div class="progress">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_gone %>%" aria-valuenow="<% per_gone %>" aria-valuemin="0" aria-valuemax="100"><% one_holder %>: <% gone %>(<% per_gone %>%)</div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: <% per_gtwo %>%" aria-valuenow="<% per_gtwo %>" aria-valuemin="0" aria-valuemax="100"><% two_holder %>: <% gtwo %>(<% per_gtwo %>%)</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: <% per_gthr %>%" aria-valuenow="<% per_gthr %>" aria-valuemin="0" aria-valuemax="100"><% thr_holder %>: <% gthr %>(<% per_gthr %>%)</div>
+      <div class="progress-bar bg-muted" role="progressbar" style="width: <% per_gfou %>%" aria-valuenow="<% per_gfou %>" aria-valuemin="0" aria-valuemax="100"><% fou_holder %>: <% gfou %>(<% per_gfou %>%)</div>
+      <div class="progress-bar bg-primary" role="progressbar" style="width: <% per_gfiv %>%" aria-valuenow="<% per_gfiv %>" aria-valuemin="0" aria-valuemax="100"><% fiv_holder %>: <% gfiv %>(<% per_gsix %>%)</div>
+      <div class="progress-bar bg-danger" role="progressbar" style="width: <% per_gsix %>%" aria-valuenow="<% per_gsix %>" aria-valuemin="0" aria-valuemax="100"><% six_holder %>: <% gsix %>(<% per_gsix %>%)</div>
+      <div class="progress-bar bg-inverse" role="progressbar" style="width: <% per_gsev %>%" aria-valuenow="<% per_gsev %>" aria-valuemin="0" aria-valuemax="100"><% sev_holder %>: <% gsev %>(<% per_gsev %>%)</div>
+      <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_geig %>%" aria-valuenow="<% per_geig %>" aria-valuemin="0" aria-valuemax="100"><% eig_holder %>: <% geig %>(<% per_geig %>%)</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: <% per_geig %>%" aria-valuenow="<% per_gnin %>" aria-valuemin="0" aria-valuemax="100"><% nin_holder %>: <% gnin %>(<% per_gnin %>%)</div>
+
+    </div>
+  </center>
+  <center style="max-width: 70%; margin-top: 40px">
+    <p>Phenotype</p>
+    <div class="progress">
+      <div class="progress-bar bg-success" role="progressbar" style="width: <% per_one %>%" aria-valuenow="<% per_trait_one %>" aria-valuemin="0" aria-valuemax="100"><% dom_one %>-<% dom_two %>: <% dom_dom %>(<% per_one %>%)</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: <% per_two %>%" aria-valuenow="<% per_trait_two %>" aria-valuemin="0" aria-valuemax="100"><% dom_one %>-<% rec_two %>: <% dom_rec %>(<% per_two %>%)</div>
+      <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_three %>%" aria-valuenow="<% per_trait_one %>" aria-valuemin="0" aria-valuemax="100"><% rec_one %>-<% dom_two %>: <% rec_dom %>(<% per_three %>%)</div>
+      <div class="progress-bar bg-primary" role="progressbar" style="width: <% per_four %>%" aria-valuenow="<% per_trait_two %>" aria-valuemin="0" aria-valuemax="100"><% rec_one %>-<% rec_two %>: <% rec_rec %>(<% per_four %>%)</div>
+    </div>
+  </center>
 </center>
 
 <footer>
