@@ -105,6 +105,22 @@
   </tbody>
 </table>
 
+<center style="margin-bottom: 70px">
+  <center style="max-width: 70%; margin-top: 40px">
+    <p>Phenotype</p>
+    <div class="progress">
+      <div class="progress-bar bg-success" role="progressbar" style="width: <% per_one %>%" aria-valuemin="0" aria-valuemax="100"><% one %></div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: <% per_two %>%" aria-valuemin="0" aria-valuemax="100"><% two %></div>
+      <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_three %>%" aria-valuemin="0" aria-valuemax="100"><% three %></div>
+      <div class="progress-bar bg-primary" role="progressbar" style="width: <% per_four %>%" aria-valuemin="0" aria-valuemax="100"><% four %></div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: <% per_five %>%" aria-valuemin="0" aria-valuemax="100"><% five %></div>
+      <div class="progress-bar bg-primary" role="progressbar" style="width: <% per_six %>%" aria-valuemin="0" aria-valuemax="100"><% six %></div>
+      <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_seven %>%" aria-valuemin="0" aria-valuemax="100"><% seven %></div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: <% per_eight %>%" aria-valuemin="0" aria-valuemax="100"><% eight %></div>
+    </div>
+  </center>
+</center>
+
 <footer>
   <center>
     <a href="/">
