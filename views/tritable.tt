@@ -124,7 +124,7 @@
 <footer>
   <center>
     <a href="/">
-      <button class="btn btn-dark info">
+      <button class="btn btn-dark info" onclick="goBack()">
         <span class="carousel-control-prev-icon"></span>
         <span>Back to home</span>
       </button>
