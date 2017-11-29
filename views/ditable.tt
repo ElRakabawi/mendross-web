@@ -57,6 +57,7 @@
 
     </div>
   </center>
+  <% if dom_one != 0 || if rec_one != 0 || if dom_two != 0 %>
   <center style="max-width: 70%; margin-top: 40px">
     <p>Phenotype</p>
     <div class="progress">
@@ -66,6 +67,7 @@
       <div class="progress-bar bg-primary" role="progressbar" style="width: <% per_four %>%" aria-valuemin="0" aria-valuemax="100"><% thirteen %></div>
     </div>
   </center>
+  <% END if %>
 </center>
 
 <footer>

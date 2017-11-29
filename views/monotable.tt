@@ -30,7 +30,7 @@
       <div class="progress-bar bg-info" role="progressbar" style="width: <% per_rec %>%" aria-valuemin="0" aria-valuemax="100"><% three %></div>
     </div>
   </center>
-  <% if dom_one != 0 %>
+  <% if dom_one != 0 || if $dom_two != 0 %>
   <center style="max-width: 40%; margin-top: 40px">
     <p>Phenotype</p>
     <div class="progress">
