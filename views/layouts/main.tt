@@ -166,10 +166,22 @@
   #btn {
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    position: relative;
   }
 
   .show-it {
     opacity: 1 !important;
+  }
+
+  .input.form-control {
+    float: left;
+    width: 80%;
+  }
+
+  .span#basic-addon2 {
+    float: left;
+    margin-top: 15px;
+    opacity: 0.6;
   }
 
   </style>

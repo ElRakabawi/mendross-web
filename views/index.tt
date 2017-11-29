@@ -19,7 +19,19 @@
     </div>
     <div style="margin-top: 50px; margin-bottom: 30px">
       <div class="mono di tri op">
-        <label for="exampleTextarea">Phenotype properties: </label>
+        <p style="color: #9c27b0; float:left">Phenotype properties: </p>
+        <p>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="float; left; margin-left: 20px; margin-top: -7px; opacity: 0.8; background-color: rgba(0,0,0,.4); color: white; cursor: pointer">
+            Why is this important?
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            By supplying mendross with your phenotypic trait names you're labeling the phenotype chart, this will help you to experience the maximum of what mendross can do, it's also required for doing further chi-square analysis if you will.
+            <br />
+            It's optional, and you are not required to enter the trait names to do the crossing itself, but the phenotype chart won't display and chi-square analysis will be prohibited.
+          </div>
+        </div>
         <input type="text" class="form-control" name="dom_one" placeholder="First Dominant Trait (i.e Tall)"/>
       </div>
 
