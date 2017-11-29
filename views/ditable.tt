@@ -67,7 +67,7 @@
       <div class="progress-bar bg-primary" role="progressbar" style="width: <% per_four %>%" aria-valuemin="0" aria-valuemax="100"><% thirteen %></div>
     </div>
   </center>
-  <% END if %>
+  <% end if %>
 </center>
 
 <footer>

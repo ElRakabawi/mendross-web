@@ -122,7 +122,7 @@
   </center>
   <% end if %>
   <div class="alert alert-warning pheno-abs" role="alert">
-    Note that if there's no phenotype chart, then you didn't supply mendross with phenotypic trait names in the phenotype properties section. so <a href="/">click here</a> to cross again.
+    Note that if there's no phenotype chart, then you didn't supply mendross with phenotypic trait names in the phenotype properties section.<a href="/">Click here</a> to cross again and make sure every form in filled properly.
   </div>
 </center>
 

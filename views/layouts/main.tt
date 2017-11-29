@@ -187,12 +187,17 @@
   .pheno-abs {
     min-width: 40%;
     color: black;
-    opacity: 0.3;
+    opacity: 0.4;
     transition: opacity 0.7s ease-in-out;
   }
 
   .pheno-abs:hover {
     opacity: 1;
+  }
+
+  .input-group-addon {
+    opacity: 0.6;
+    margin-top: 25px;
   }
   </style>
 </head>
@@ -238,6 +243,10 @@
    $("."+divClass).show();
    $("#btn").addClass('show-it');
   });
+
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+  })
 </script>
 </body>
 </html>
