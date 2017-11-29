@@ -106,6 +106,7 @@
 </table>
 
 <center style="margin-bottom: 70px">
+  <% if dom_one != 0 || if rec_one != 0 || if dom_two != 0 || if rec_two != 0 || if dom_three != 0 %>
   <center style="max-width: 70%; margin-top: 40px">
     <p>Phenotype</p>
     <div class="progress">
@@ -119,6 +120,10 @@
       <div class="progress-bar bg-success" role="progressbar" style="width: <% per_eight %>%" aria-valuemin="0" aria-valuemax="100"><% eight %></div>
     </div>
   </center>
+  <% end if %>
+  <div class="alert alert-warning pheno-abs" role="alert">
+    Note that if there's no phenotype chart, then you didn't supply mendross with phenotypic trait names in the phenotype properties section. so <a href="/">click here</a> to cross again.
+  </div>
 </center>
 
 <footer>
