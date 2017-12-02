@@ -1,4 +1,8 @@
-<p>Chi-square Value is <% chi_value %></p>
-<p>Degree of Freedom is <% DOF %></p>
-<p>Critical value is <% critical_value %></p>
-<p>So the hypothesis is <% dec %></p>
+<center>
+  <p>Chi-square Value is <strong><% chi_value %></strong></p>
+  <p>Degree of Freedom is <% DOF %></p>
+  <p>Critical value is <% critical_value %></p>
+  <div class="alert alert-light" role="alert" style="color: black">
+    The hypothesis is <strong><% dec %></strong>
+  </div>
+</center>

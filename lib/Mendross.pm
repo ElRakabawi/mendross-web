@@ -1006,6 +1006,7 @@ post '/chi' => sub {
     $dec = "Rejected";
   }
 
+  
   template 'chi-result' => {
     'chi_value' => $chi_value,
     'DOF' => $DOF,
