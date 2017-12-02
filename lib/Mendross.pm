@@ -966,7 +966,6 @@ post '/cross' => sub {
           'dom_three' => $dom_thr,
           'rec_three' => $rec_thr,
 
-
           'one' => $one,
           'two' => $two,
           'three' => $three,
@@ -974,7 +973,25 @@ post '/cross' => sub {
           'five' => $five,
           'six' => $six,
           'seven' => $seven,
-          'eight' => $eight
+          'eight' => $eight,
+
+          'dom_dom_dom' => $dom_dom_dom,
+          'dom_dom_rec' => $dom_dom_rec,
+          'dom_rec_dom' => $dom_rec_dom,
+          'dom_rec_rec' => $dom_rec_rec,
+          'rec_dom_dom' => $rec_dom_dom,
+          'rec_dom_rec' => $rec_dom_rec,
+          'rec_rec_dom' => $rec_rec_dom,
+          'rec_rec_rec' => $rec_rec_rec,
+
+          'pheno_one' => $dom_one.'-'.$dom_two.'-'.$dom_thr,
+          'pheno_two' => $dom_one.'-'.$dom_two.'-'.$rec_thr,
+          'pheno_three' => $dom_one.'-'.$rec_two.'-'.$dom_thr,
+          'pheno_four' => $dom_one.'-'.$rec_two.'-'.$rec_thr,
+          'pheno_five' => $rec_one.'-'.$dom_two.'-'.$dom_thr,
+          'pheno_six' => $rec_one.'-'.$dom_two.'-'.$rec_thr,
+          'pheno_seven' => $rec_one.'-'.$rec_two.'-'.$dom_thr,
+          'pheno_eight' => $rec_one.'-'.$rec_two.'-'.$rec_thr
 
        };
      }
@@ -998,6 +1015,8 @@ post '/chi' => sub {
   my $obs_four = body_parameters->get('obs_four');
   my $obs_five = body_parameters->get('obs_five');
   my $obs_six = body_parameters->get('obs_six');
+  my $obs_seven = body_parameters->get('obs_seven');
+  my $obs_eight = body_parameters->get('obs_eight');
 
   my $TOG = body_parameters->get('TOG'); #Type of crossing
 
@@ -1040,7 +1059,6 @@ post '/chi' => sub {
   }
 
   elsif ($TOG == 2){
-
     my $trait_one = body_parameters->get('trait_one');
     my $trait_two = body_parameters->get('trait_two');
     my $trait_three = body_parameters->get('trait_three');
@@ -1070,6 +1088,52 @@ post '/chi' => sub {
     $chi_value = int($chi_value * $factor) / $factor; #Rounding it up to maximum of 3 decimals
 
     template 'chi-result-di' => {
+      'chi_value' => $chi_value,
+      'DOF' => $DOF,
+      'critical_value' => $critical_value,
+      'dec' => $dec
+
+    }
+  }
+  elsif ($TOG == 3){
+    my $trait_one = body_parameters->get('trait_one');
+    my $trait_two = body_parameters->get('trait_two');
+    my $trait_three = body_parameters->get('trait_three');
+    my $trait_four = body_parameters->get('trait_four');
+    my $trait_five = body_parameters->get('trait_five');
+    my $trait_six = body_parameters->get('trait_six');
+    my $trait_seven = body_parameters->get('trait_seven');
+    my $trait_eight = body_parameters->get('trait_eight');
+
+
+    my $total = $obs_one + $obs_two + $obs_three + $obs_four + $obs_five + $obs_six + $obs_seven + $obs_eight;
+
+    my $exp_one = ($trait_one/64) * $total; #Expected number of dom-dom-doc trait
+    my $exp_two = ($trait_two/64) * $total; #Expected number of dom-dom-rec trait
+    my $exp_three = ($trait_three/64) * $total; #Expected number of dom-rec-dom trait
+    my $exp_four = ($trait_four/64) * $total; #Expected number of dom-rec-rec trait
+    my $exp_five = ($trait_five/64) * $total; #Expected number of rec-dom-dom trait
+    my $exp_six = ($trait_six/64) * $total; #Expected number of rec-dom-rec trait
+    my $exp_seven = ($trait_seven/64) * $total; #Expected number of rec-rec-dom trait
+    my $exp_eight = ($trait_eight/64) * $total; #Expected number of rec-rec-rec trait
+
+    my $DOF = 7; #Degree of freedom = (n-1) = (8-1) = 7
+    my $critical_value = 14.067; # 7 --> (0.05)
+    my $dec = "";
+
+    my $chi_value = ((($obs_one - $exp_one)**2) / $exp_one) + ((($obs_two - $exp_two)**2) / $exp_two) + ((($obs_three - $exp_three)**2) / $exp_three) + ((($obs_four - $exp_four)**2) / $exp_four) + ((($obs_five - $exp_five)**2) / $exp_five) + ((($obs_six - $exp_six)**2) / $exp_six) + ((($obs_seven - $exp_seven)**2) / $exp_seven) + ((($obs_eight - $exp_eight)**2) / $exp_eight);
+
+
+    if($chi_value < $critical_value){
+      $dec = "There's a significant association, Thus the hypothesis follows mendelian inheritance laws (ACCPETED)";
+    }
+    else {
+      $dec = "There's no significant association, Thus the hypothesis doesn't follow mendelian inheritance laws (REJECTED)";
+    }
+
+    $chi_value = int($chi_value * $factor) / $factor; #Rounding it up to maximum of 3 decimals
+
+    template 'chi-result-tri' => {
       'chi_value' => $chi_value,
       'DOF' => $DOF,
       'critical_value' => $critical_value,

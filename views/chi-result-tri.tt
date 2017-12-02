@@ -1,0 +1,21 @@
+<center style="margin-top: 40px">
+  <p class="chis">Chi-square Value is <strong><% chi_value %></strong></p>
+  <p class="chis">Degree of Freedom is <strong><% DOF %></strong></p>
+  <p class="chis">Critical value is <strong><% critical_value %></strong></p>
+  <div class="alert alert-light" role="alert" style="color: black; min-width: 50%">
+    <strong><% dec %></strong>
+  </div>
+</center>
+
+
+<style>
+  .chis {
+    font-size: 14px;
+  }
+
+  strong {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+</style>
