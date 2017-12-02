@@ -979,40 +979,49 @@ post '/cross' => sub {
 
 };
 
+
+#Chi-square analysis
 post '/chi' => sub {
   my $obs_one = body_parameters->get('obs_one');
   my $obs_two = body_parameters->get('obs_two');
-  my $trait_one = body_parameters->get('trait_one');
-  my $trait_two = body_parameters->get('trait_two');
+  my $TOG = body_parameters->get('TOG');
+
+  my $factor = 10**3; #Decimal factor
+
+  if ($TOG == 1){
+    my $trait_one = body_parameters->get('trait_one');
+    my $trait_two = body_parameters->get('trait_two');
 
 
-  my $total = $obs_one + $obs_two;
+    my $total = $obs_one + $obs_two;
 
-  my $exp_one = ($trait_one/4) * $total;
-  my $exp_two = ($trait_two/4) * $total;
+    my $exp_one = ($trait_one/4) * $total;
+    my $exp_two = ($trait_two/4) * $total;
 
 
-  my $DOF = 1; #Degree of freedom = (n-1) = (2-1) = 1
+    my $DOF = 1; #Degree of freedom = (n-1) = (2-1) = 1
 
-  my $chi_value = ((($obs_one - $exp_one)**2) / $exp_one)+((($obs_two - $exp_two)**2) / $exp_two);
-  my $critical_value = 3.841; # 1 --> (0.05)
+    my $chi_value = ((($obs_one - $exp_one)**2) / $exp_one)+((($obs_two - $exp_two)**2) / $exp_two);
+    my $critical_value = 3.841; # 1 --> (0.05)
 
-  my $dec = "";
+    my $dec = "";
 
-  if($chi_value < $critical_value){
-    $dec = "Accepted";
-  }
-  else {
-    $dec = "Rejected";
-  }
+    if($chi_value < $critical_value){
+      $dec = "There's a significant association, Thus the hypothesis follows mendelian inheritance laws (ACCPETED)";
+    }
+    else {
+      $dec = "There's no significant association, Thus the hypothesis doesn't follow mendelian inheritance laws (REJECTED)";
+    }
 
-  
-  template 'chi-result' => {
-    'chi_value' => $chi_value,
-    'DOF' => $DOF,
-    'critical_value' => $critical_value,
-    'dec' => $dec
+    $chi_value = int($chi_value * $factor) / $factor; #Rounding it up to maximum of 3 decimals
 
+    template 'chi-result' => {
+      'chi_value' => $chi_value,
+      'DOF' => $DOF,
+      'critical_value' => $critical_value,
+      'dec' => $dec
+
+    }
   }
 };
 

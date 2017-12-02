@@ -65,6 +65,9 @@
               <div class="input-group" style="display: none">
                 <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_two" value="<% trait_two %>">
               </div>
+              <div class="input-group" style="display: none">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="TOG" value="1">
+              </div>
 
           </div>
           <div class="modal-footer">
