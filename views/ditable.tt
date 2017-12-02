@@ -66,6 +66,60 @@
       <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_three %>%" aria-valuemin="0" aria-valuemax="100"><% twelve %></div>
       <div class="progress-bar bg-primary" role="progressbar" style="width: <% per_four %>%" aria-valuemin="0" aria-valuemax="100"><% thirteen %></div>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form method="POST" role="form" action="/chi">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Chi-square Analysis</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <label>Enter your observed data set</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="obs_one">
+                  <!-- <span class="input-group-addon" id="basic-addon2"><% dom_one %></span> -->
+                  <span class="input-group-addon" id="basic-addon2"><% pheno_one %></span>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="obs_two">
+                  <span class="input-group-addon" id="basic-addon2"><% pheno_two %></span>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="obs_three">
+                  <span class="input-group-addon" id="basic-addon2"><% pheno_three %></span>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="obs_four">
+                  <span class="input-group-addon" id="basic-addon2"><% pheno_four %></span>
+                </div>
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_one" value="<% dom_dom %>">
+                </div>
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_two" value="<% dom_rec %>">
+                </div>
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_three" value="<% rec_dom %>">
+                </div>
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_four" value="<% rec_rec %>">
+                </div>
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="TOG" value="2">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" style="cursor: pointer">Close</button>
+              <button type="submit" class="btn btn-primary" style="cursor: pointer">Compute chi-square</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </center>
   <% end if %>
 </center>
@@ -73,10 +127,13 @@
 <footer>
   <center>
     <a href="/">
-      <button class="btn btn-dark info">
+      <button class="btn btn-dark info" style="padding-left: 7px">
         <span class="carousel-control-prev-icon"></span>
         <span>Back to home</span>
       </button>
     </a>
+    <button type="button" class="btn btn-dark info" data-toggle="modal" data-target="#exampleModal" style="background-color: #9c27b0; padding-left: 23px">
+      Chi-square analysis
+    </button>
   </center>
 </footer>

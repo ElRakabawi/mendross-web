@@ -367,6 +367,11 @@ post '/cross' => sub {
         my $twelve = $rec_one.'-'.$dom_two.': '.$rec_dom.'('.$per_three.'%)';
         my $thirteen = $rec_one.'-'.$rec_two.': '.$rec_rec.'('.$per_four.'%)';
 
+        my $pheno_one = $dom_one.'-'.$dom_two;
+        my $pheno_two = $dom_one.'-'.$rec_two;
+        my $pheno_three = $rec_one.'-'.$dom_two;
+        my $pheno_four = $rec_one.'-'.$rec_two;
+
         if($gone == 0){
           $one = '';
         }
@@ -509,7 +514,12 @@ post '/cross' => sub {
           'ten' => $ten,
           'eleven' => $eleven,
           'twelve' => $twelve,
-          'thirteen' => $thirteen
+          'thirteen' => $thirteen,
+
+          'pheno_one' => $pheno_one,
+          'pheno_two' => $pheno_two,
+          'pheno_three' => $pheno_three,
+          'pheno_four' => $pheno_four
 
 
        };
@@ -987,7 +997,7 @@ post '/chi' => sub {
   my $obs_three = body_parameters->get('obs_three');
   my $obs_four = body_parameters->get('obs_four');
   my $obs_five = body_parameters->get('obs_five');
-  my obs_six = body_parameters->get('obs_six');
+  my $obs_six = body_parameters->get('obs_six');
 
   my $TOG = body_parameters->get('TOG'); #Type of crossing
 
@@ -1033,8 +1043,8 @@ post '/chi' => sub {
 
     my $trait_one = body_parameters->get('trait_one');
     my $trait_two = body_parameters->get('trait_two');
-    my $trait_one = body_parameters->get('trait_three');
-    my $trait_two = body_parameters->get('trait_four');
+    my $trait_three = body_parameters->get('trait_three');
+    my $trait_four = body_parameters->get('trait_four');
 
     my $total = $obs_one + $obs_two + $obs_three + $obs_four;
 
@@ -1044,11 +1054,11 @@ post '/chi' => sub {
     my $exp_four = ($trait_four/16) * $total; #Expected number of rec-rec trait
 
     my $DOF = 3; #Degree of freedom = (n-1) = (4-1) = 3
+    my $critical_value = 7.815; # 3 --> (0.05)
+    my $dec = "";
 
     my $chi_value = ((($obs_one - $exp_one)**2) / $exp_one) + ((($obs_two - $exp_two)**2) / $exp_two) + ((($obs_three - $exp_three)**2) / $exp_three) + ((($obs_four - $exp_four)**2) / $exp_four);
-    my $critical_value = 7.815; # 3 --> (0.05)
 
-    my $dec = "";
 
     if($chi_value < $critical_value){
       $dec = "There's a significant association, Thus the hypothesis follows mendelian inheritance laws (ACCPETED)";
