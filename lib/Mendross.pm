@@ -984,7 +984,12 @@ post '/cross' => sub {
 post '/chi' => sub {
   my $obs_one = body_parameters->get('obs_one');
   my $obs_two = body_parameters->get('obs_two');
-  my $TOG = body_parameters->get('TOG');
+  my $obs_three = body_parameters->get('obs_three');
+  my $obs_four = body_parameters->get('obs_four');
+  my $obs_five = body_parameters->get('obs_five');
+  my obs_six = body_parameters->get('obs_six');
+
+  my $TOG = body_parameters->get('TOG'); #Type of crossing
 
   my $factor = 10**3; #Decimal factor
 
@@ -1015,7 +1020,46 @@ post '/chi' => sub {
 
     $chi_value = int($chi_value * $factor) / $factor; #Rounding it up to maximum of 3 decimals
 
-    template 'chi-result' => {
+    template 'chi-result-mono' => {
+      'chi_value' => $chi_value,
+      'DOF' => $DOF,
+      'critical_value' => $critical_value,
+      'dec' => $dec
+
+    }
+  }
+
+  elsif ($TOG == 2){
+
+    my $trait_one = body_parameters->get('trait_one');
+    my $trait_two = body_parameters->get('trait_two');
+    my $trait_one = body_parameters->get('trait_three');
+    my $trait_two = body_parameters->get('trait_four');
+
+    my $total = $obs_one + $obs_two + $obs_three + $obs_four;
+
+    my $exp_one = ($trait_one/16) * $total; #Expected number of dom-dom trait
+    my $exp_two = ($trait_two/16) * $total; #Expected number of dom-rec trait
+    my $exp_three = ($trait_three/16) * $total; #Expected number of rec-dom trait
+    my $exp_four = ($trait_four/16) * $total; #Expected number of rec-rec trait
+
+    my $DOF = 3; #Degree of freedom = (n-1) = (4-1) = 3
+
+    my $chi_value = ((($obs_one - $exp_one)**2) / $exp_one) + ((($obs_two - $exp_two)**2) / $exp_two) + ((($obs_three - $exp_three)**2) / $exp_three) + ((($obs_four - $exp_four)**2) / $exp_four);
+    my $critical_value = 7.815; # 3 --> (0.05)
+
+    my $dec = "";
+
+    if($chi_value < $critical_value){
+      $dec = "There's a significant association, Thus the hypothesis follows mendelian inheritance laws (ACCPETED)";
+    }
+    else {
+      $dec = "There's no significant association, Thus the hypothesis doesn't follow mendelian inheritance laws (REJECTED)";
+    }
+
+    $chi_value = int($chi_value * $factor) / $factor; #Rounding it up to maximum of 3 decimals
+
+    template 'chi-result-di' => {
       'chi_value' => $chi_value,
       'DOF' => $DOF,
       'critical_value' => $critical_value,
