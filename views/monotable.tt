@@ -41,28 +41,37 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Chi-square Analysis</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <label>Enter your observed data set</label>
-          <div class="input-group">
-            <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <!-- <span class="input-group-addon" id="basic-addon2"><% dom_one %></span> -->
-            <span class="input-group-addon" id="basic-addon2"><% dom_one %></span>
+        <form method="POST" role="form" action="/chi">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Chi-square Analysis</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="input-group">
-            <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <span class="input-group-addon" id="basic-addon2"><% rec_one %></span>
+          <div class="modal-body">
+            <label>Enter your observed data set</label>
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="obs_one">
+                <!-- <span class="input-group-addon" id="basic-addon2"><% dom_one %></span> -->
+                <span class="input-group-addon" id="basic-addon2"><% dom_one %></span>
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="obs_two">
+                <span class="input-group-addon" id="basic-addon2"><% rec_one %></span>
+              </div>
+              <div class="input-group" style="display: none">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_one" value="<% trait_one %>">
+              </div>
+              <div class="input-group" style="display: none">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_two" value="<% trait_two %>">
+              </div>
+
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="cursor: pointer">Close</button>
-          <button type="button" class="btn btn-primary">Compute chi-square value</button>
-        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="cursor: pointer">Close</button>
+            <button type="submit" class="btn btn-primary" style="cursor: pointer">Compute chi-square</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

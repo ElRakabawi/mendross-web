@@ -1,0 +1,4 @@
+<p>Chi-square Value is <% chi_value %></p>
+<p>Degree of Freedom is <% DOF %></p>
+<p>Critical value is <% critical_value %></p>
+<p>So the hypothesis is <% dec %></p>

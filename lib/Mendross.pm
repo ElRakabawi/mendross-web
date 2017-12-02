@@ -138,12 +138,12 @@ post '/cross' => sub {
 
 
       #Extra layer of pretty output for Genotype/Phenotype ratios
-      my $one = $dom_holder.':'.$dom.'('.$per_dom.')';
-      my $two = $het_holder.':'.$het.'('.$per_het.')';
-      my $three = $rec_holder.':'.$rec.'('.$per_rec.')';
+      my $one = $dom_holder.':'.$dom.'('.$per_dom.'%)';
+      my $two = $het_holder.':'.$het.'('.$per_het.'%)';
+      my $three = $rec_holder.':'.$rec.'('.$per_rec.'%)';
 
-      my $four = $dom_one.':'.$trait_one.'('.$per_trait_one.')';
-      my $five = $rec_one.':'.$trait_two.'('.$per_trait_two.')';
+      my $four = $dom_one.':'.$trait_one.'('.$per_trait_one.'%)';
+      my $five = $rec_one.':'.$trait_two.'('.$per_trait_two.'%)';
 
       if($dom == 0){
         $one = '';
@@ -977,10 +977,42 @@ post '/cross' => sub {
     }
   }
 
+};
+
+post '/chi' => sub {
+  my $obs_one = body_parameters->get('obs_one');
+  my $obs_two = body_parameters->get('obs_two');
+  my $trait_one = body_parameters->get('trait_one');
+  my $trait_two = body_parameters->get('trait_two');
 
 
+  my $total = $obs_one + $obs_two;
+
+  my $exp_one = ($trait_one/4) * $total;
+  my $exp_two = ($trait_two/4) * $total;
 
 
+  my $DOF = 1; #Degree of freedom = (n-1) = (2-1) = 1
+
+  my $chi_value = ((($obs_one - $exp_one)**2) / $exp_one)+((($obs_two - $exp_two)**2) / $exp_two);
+  my $critical_value = 3.841; # 1 --> (0.05)
+
+  my $dec = "";
+
+  if($chi_value < $critical_value){
+    $dec = "Accepted";
+  }
+  else {
+    $dec = "Rejected";
+  }
+
+  template 'chi-result' => {
+    'chi_value' => $chi_value,
+    'DOF' => $DOF,
+    'critical_value' => $critical_value,
+    'dec' => $dec
+
+  }
 };
 
 true;
