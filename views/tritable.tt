@@ -188,7 +188,7 @@
                   <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_eight" value="<% rec_rec_rec %>">
                 </div>
                 <div class="input-group" style="display: none">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="TOG" value="2">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="TOG" value="3">
                 </div>
 
             </div>
