@@ -23,7 +23,7 @@
 
 <center style="margin-bottom: 70px">
   <center style="max-width: 40%; margin-top: 70px;">
-    <p>Genotype</p>
+    <p style="font-weight: 900">Genotype</p>
     <div class="progress">
       <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_dom %>%" aria-valuemin="0" aria-valuemax="100"><% one %></div>
       <div class="progress-bar bg-success" role="progressbar" style="width: <% per_het %>%" aria-valuemin="0" aria-valuemax="100"><% two %></div>
@@ -32,7 +32,7 @@
   </center>
   <% if dom_one != 0 || if rec_one != 0 %>
   <center style="max-width: 40%; margin-top: 40px">
-    <p>Phenotype</p>
+    <p style="font-weight: 900">Phenotype</p>
     <div class="progress">
       <div class="progress-bar bg-success" role="progressbar" style="width: <% per_trait_one %>%" aria-valuemin="0" aria-valuemax="100"><% four %></div>
       <div class="progress-bar bg-info" role="progressbar" style="width: <% per_trait_two %>%" aria-valuemin="0" aria-valuemax="100"><% five %></div>

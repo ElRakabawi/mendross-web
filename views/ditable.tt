@@ -43,7 +43,7 @@
 
 <center style="margin-bottom: 70px">
   <center style="max-width: 70%; margin-top: 70px;">
-    <p>Genotype</p>
+    <p style="font-weight: 900">Genotype</p>
     <div class="progress">
       <div class="progress-bar bg-warning" role="progressbar" style="width: <% per_gone %>%" aria-valuemin="0" aria-valuemax="100"><% one %></div>
       <div class="progress-bar bg-success" role="progressbar" style="width: <% per_gtwo %>%" aria-valuemin="0" aria-valuemax="100"><% two %></div>
@@ -59,7 +59,7 @@
   </center>
   <% if dom_one != 0 || if rec_one != 0 || if dom_two != 0 %>
   <center style="max-width: 70%; margin-top: 40px">
-    <p>Phenotype</p>
+    <p style="font-weight: 900">Phenotype</p>
     <div class="progress">
       <div class="progress-bar bg-success" role="progressbar" style="width: <% per_one %>%" aria-valuemin="0" aria-valuemax="100"><% ten %></div>
       <div class="progress-bar bg-info" role="progressbar" style="width: <% per_two %>%" aria-valuemin="0" aria-valuemax="100"><% eleven %></div>
@@ -95,32 +95,20 @@
                   <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="obs_four">
                   <span class="input-group-addon" id="basic-addon2"><% pheno_four %></span>
                 </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_one" value="<% dom_dom_dom %>">
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_one" value="<% dom_dom %>">
                 </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_two" value="<% dom_dom_rec %>">
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_two" value="<% dom_rec %>">
                 </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_three" value="<% dom_rec_dom %>">
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_three" value="<% rec_dom %>">
                 </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_four" value="<% dom_rec_rec %>">
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_four" value="<% rec_rec %>">
                 </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_five" value="<% rec_dom_dom %>">
-                </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_six" value="<% rec_dom_rec %>">
-                </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_seven" value="<% rec_rec_dom %>">
-                </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="trait_eight" value="<% rec_rec_rec %>">
-                </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="TOG" value="3">
+                <div class="input-group" style="display: none">
+                  <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" name="TOG" value="2">
                 </div>
 
             </div>
