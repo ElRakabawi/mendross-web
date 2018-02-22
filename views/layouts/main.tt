@@ -31,6 +31,7 @@
   <meta property="og:description"        content="An open-source online tool that compute Mono, Di and Trihybrid cross using punnett square. It's written in Perl and built on PerlDancer2." />
   <meta property="og:image"              content="logo.png" />
   <style>
+  @import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
   form.ng-scope.ng-pristine.ng-valid {
       max-width: 70%;
       margin-left: auto;
@@ -199,6 +200,29 @@
     opacity: 0.6;
     margin-top: 25px;
   }
+
+  .Logo-typo {
+    margin-top: -60px !important;
+    font-family: 'Comfortaa', cursive;
+    color: #8E44AD;
+    font-size: 30px;
+  }
+
+  svg{
+    margin-top: -10px;
+    width:240px;
+    height:240px;
+    visibility:hidden;
+
+  }
+
+  .uiOutline{
+   stroke:#8E44AD;
+  }
+
+  .bars line:nth-child(2,4,6){
+   stroke: #8E44AD !important;
+  }
   </style>
 </head>
 
@@ -235,6 +259,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="javascripts/material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <script>
   $('#genes').on('change',function()
   {
@@ -247,6 +272,59 @@
   $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').focus()
   })
+
+  var xmlns = "http://www.w3.org/2000/svg",
+  xlinkns = "http://www.w3.org/1999/xlink",
+  select = function(s) {
+    return document.querySelector(s);
+  },
+  selectAll = function(s) {
+    return document.querySelectorAll(s);
+  }
+
+  TweenMax.set('svg', {
+    visibility: 'visible'
+  })
+
+  /* TweenMax.set('.offsetStrand', {
+    //x:136,
+   y:-0
+  }) */
+
+  var mainTl = new TimelineMax();
+  var maskTl = new TimelineMax({repeat:-1}).timeScale(0.5);
+  maskTl.to(['.strandOutlines', '#strandMask path'], 1, {
+   x:'-=252',
+   ease:Linear.easeNone
+  })
+  .to('line', 1, {
+   x:'+=126',
+   ease:Linear.easeNone
+  },'-=1')
+  .to('.offsetStrand', 1, {
+   x:'-=252',
+   ease:Linear.easeNone
+  },'-=1')
+
+  var strandTl = new TimelineMax({repeat:-1}).timeScale(1.3);
+  strandTl.to('line', 1, {
+   x:'+=126',
+   ease:Linear.easeNone
+  })
+
+  //mainTl.add([strandTl, maskTl], 0)
+  TweenMax.globalTimeScale(0.5)
+
+  var dnaTl = new TimelineMax({ repeat:-1,
+   yoyo:true});
+  dnaTl.to(['.dnaMask', '.outline'], 0.82, {
+   attr:{
+    r:'-=10'
+   },
+   //strokeWidth:40,
+   ease:Sine.easeInOut
+
+})
 </script>
 </body>
 </html>
