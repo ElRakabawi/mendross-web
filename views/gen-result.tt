@@ -1,5 +1,5 @@
 <center>
-  <div style="position: absolute; width: 100%; height: 210px; top: 0px; background-color: white; z-index: 10">
+  <div style="position: absolute; width: 100%; height: 250px; top: 0px; background-color: white; z-index: 10">
     <svg class="minimalDNASVG" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" >
      <defs>
      <clipPath id="circMask">
@@ -62,14 +62,30 @@
     <h1 class="Logo-typo">Gentein</h1>
   </div>
 
-  <div class="wrapper" style="margin-top: 70px; margin-bottom: 50px">
-    <p style="opacity: 0.7; margin-top: 40px; font-size: 18px; margin-bottom: 30px">Gentein is a translator tool for translating DNA or mRNA sequences to protein sequence (Amino Acids Seq) supporting Open-Reading frames</p>
-    <form method="POST" role="form" action="/compute">
-      <div class="form-group" style="max-width: 650px">
-        <label for="exampleTextarea">Enter your DNA or mRNA sequence below to be translated: </label>
-        <textarea rows="15" cols="70" type="text" class="form-control" name="entry" placeholder="ACGATCAGATAGATGA or GAUUAGCAGAGCAUAGA"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" style="cursor: pointer">Translate Sequence</button>
-    </form>
+  <div class="wrapper" style="margin-top: 100px; margin-bottom: 50px">
+    <div class="res-box">
+      <p class="frame-no">5'3' Frame 1</p>
+      <p class="chis"><% Fone %></p>
+    </div>
+    <div class="res-box">
+      <p class="frame-no">5'3' Frame 2</p>
+      <p class="chis"><% Ftwo %></p>
+    </div>
+    <div class="res-box">
+      <p class="frame-no">5'3' Frame 3</p>
+      <p class="chis"><% Fthree %></p>
+    </div>
+    <div class="res-box">
+      <p class="frame-no">3'5' Frame 1</p>
+      <p class="chis"><% Fone_rev %></p>
+    </div>
+    <div class="res-box">
+      <p class="frame-no">3'5' Frame 2</p>
+      <p class="chis"><% Ftwo_rev %></p>
+    </div>
+    <div class="res-box">
+      <p class="frame-no">3'5' Frame 3</p>
+      <p class="chis"><% Fthree_rev %></p>
+    </div>
   </div>
 </center>

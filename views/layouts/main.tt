@@ -223,6 +223,35 @@
   .bars line:nth-child(2,4,6){
    stroke: #8E44AD !important;
   }
+
+  .res-box {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 9px;
+    text-align: left;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .frame-no {
+    text-align: left;
+    color: rgba(0,0,0,.5);
+    margin: 8px;
+    transition: all 0.3s ease-in;
+  }
+
+  .res-box:hover {
+    border-color: #8E44AD;
+  }
+
+  .res-box:hover >  .frame-no {
+    color: #8E44AD;
+  }
+
+  .chis {
+    font-size: 16px;
+  }
   </style>
 </head>
 

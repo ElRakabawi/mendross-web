@@ -64,4 +64,10 @@
     <span class="carousel-control-next-icon"></span>
     <span>About mendross</span>
   </button>
+
+  <a href="/gentein">
+    <button class="btn btn-dark info" style="width: 150px; background-color: #8E44AD; padding-right: 16px">
+      <span>Gentein</span>
+    </button>
+  </a>
 </center>

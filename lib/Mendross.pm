@@ -9,7 +9,7 @@ get '/' => sub {
 };
 
 get '/gentein' => sub {
-    template 'gentein' => { 'title' => 'Gentein' };
+    template 'gentein' => { 'title' => 'Gentein | Gene to Protein Translator' };
 };
 
 post '/cross' => sub {
@@ -1275,12 +1275,7 @@ post '/compute' => sub {
   }
 
   if($mRNA_det == 1){
-    print color("GREEN"), "\nThe sequence detected is mRNA .. converting to DNA!\n", color("RESET");
     $dna =~ tr/U/T/;
-    print "The new DNA sequence is: $dna\n";
-  }
-  else {
-    print color("GREEN"), "\nThe sequence detected is DNA!\n", color("RESET");
   }
 
   #Initiation of protein sequence
@@ -1296,12 +1291,9 @@ post '/compute' => sub {
     $protein .= ' ' . $codon;
     $Fone = $protein;
   }
-  print color("GREEN"), "\n 5'3' Frame 1\n", color("RESET");
-  print "$Fone\n";
 
   my @test_arr_one = orf_detect($Fone);
   my $itr_len_one = scalar(@test_arr_one);
-  print color("RED"), "\n Number of ORFs: $itr_len_one\n", color("RESET");
   for(my $j=0; $j<$itr_len_one; $j++){
     print "($j) $test_arr_one[$j]\n";
   }
@@ -1316,12 +1308,9 @@ post '/compute' => sub {
     $protein .= ' ' . $codon;
     $Ftwo = $protein;
   }
-  print color("GREEN"), "\n 5'3' Frame 2\n", color("RESET");
-  print "$Ftwo\n";
 
   my @test_arr_two = orf_detect($Ftwo);
   my $itr_len_two = scalar(@test_arr_two);
-  print color("RED"), "\n Number of ORFs: $itr_len_two\n", color("RESET");
   for(my $j=0; $j<$itr_len_two; $j++){
     print "($j) $test_arr_two[$j]\n";
   }
@@ -1336,12 +1325,9 @@ post '/compute' => sub {
     $protein .= ' ' . $codon;
     $Fthree = $protein;
   }
-  print color("GREEN"), "\n 5'3' Frame 3\n", color("RESET");
-  print "$Fthree\n";
 
   my @test_arr_three = orf_detect($Fthree);
   my $itr_len_three = scalar(@test_arr_three);
-  print color("RED"), "\n Number of ORFs: $itr_len_three\n", color("RESET");
   for(my $j=0; $j<$itr_len_three; $j++){
     print "($j) $test_arr_three[$j]\n";
   }
@@ -1377,12 +1363,9 @@ post '/compute' => sub {
     $protein .= ' ' . $codon;
     $Fone_rev = $protein;
   }
-  print color("GREEN"), "\n 3'5' Frame 1\n", color("RESET");
-  print "$Fone_rev\n";
 
   my @test_arr_one_rev = orf_detect($Fone_rev);
   my $itr_len_one_rev = scalar(@test_arr_one_rev);
-  print color("RED"), "\n Number of ORFs: $itr_len_one_rev\n", color("RESET");
   for(my $j=0; $j<$itr_len_one_rev; $j++){
     print "($j) $test_arr_one_rev[$j]\n";
   }
@@ -1397,12 +1380,9 @@ post '/compute' => sub {
     $protein .= ' ' . $codon;
     $Ftwo_rev = $protein;
   }
-  print color("GREEN"), "\n 3'5' Frame 2\n", color("RESET");
-  print "$Ftwo_rev\n";
 
   my @test_arr_two_rev = orf_detect($Ftwo_rev);
   my $itr_len_two_rev = scalar(@test_arr_two_rev);
-  print color("RED"), "\n Number of ORFs: $itr_len_two_rev\n", color("RESET");
   for(my $j=0; $j<$itr_len_two_rev; $j++){
     print "($j) $test_arr_two_rev[$j]\n";
   }
@@ -1416,12 +1396,9 @@ post '/compute' => sub {
     $protein .= ' ' . $codon;
     $Fthree_rev = $protein;
   }
-  print color("GREEN"), "\n 3'5' Frame 3\n", color("RESET");
-  print "$Fthree_rev\n";
 
   my @test_arr_three_rev = orf_detect($Fthree_rev);
   my $itr_len_three_rev = scalar(@test_arr_three_rev);
-  print color("RED"), "\n Number of ORFs: $itr_len_three_rev\n", color("RESET");
   for(my $j=0; $j<$itr_len_three_rev; $j++){
     print "($j) $test_arr_three_rev[$j]\n";
   }
@@ -1452,11 +1429,13 @@ post '/compute' => sub {
     return @orfs;
   }
 
-  template 'chi-result-mono' => {
-    'chi_value' => $chi_value,
-    'DOF' => $DOF,
-    'critical_value' => $critical_value,
-    'dec' => $dec
+  template 'gen-result' => {
+    'Fone' => $Fone,
+    'Ftwo' => $Ftwo,
+    'Fthree' => $Fthree,
+    'Fone_rev' => $Fone_rev,
+    'Ftwo_rev' => $Ftwo_rev,
+    'Fthree_rev' => $Fthree_rev,
 
   }
 };
