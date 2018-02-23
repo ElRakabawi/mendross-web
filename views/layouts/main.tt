@@ -251,6 +251,18 @@
 
   .chis {
     font-size: 16px;
+    font-weight: 300;
+  }
+
+  path.offsetStrand {
+    stroke: white;
+  }
+
+  p.ORF {
+    line-height: 1.5;
+    color: #4a225b;
+    font-weight: 500;
+    font-size: 15px;
   }
   </style>
 </head>

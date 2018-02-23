@@ -66,26 +66,32 @@
     <div class="res-box">
       <p class="frame-no">5'3' Frame 1</p>
       <p class="chis"><% Fone %></p>
+      <p class="ORF"><% ORFs_one%></p>
     </div>
     <div class="res-box">
       <p class="frame-no">5'3' Frame 2</p>
       <p class="chis"><% Ftwo %></p>
+      <p class="ORF"><% ORFs_two %></p>
     </div>
     <div class="res-box">
       <p class="frame-no">5'3' Frame 3</p>
       <p class="chis"><% Fthree %></p>
+      <p class="ORF"><% ORFs_three %></p>
     </div>
     <div class="res-box">
       <p class="frame-no">3'5' Frame 1</p>
       <p class="chis"><% Fone_rev %></p>
+      <p class="ORF"><% ORFs_one_rev %></p>
     </div>
     <div class="res-box">
       <p class="frame-no">3'5' Frame 2</p>
       <p class="chis"><% Ftwo_rev %></p>
+      <p class="ORF"><% ORFs_two_rev %></p>
     </div>
     <div class="res-box">
       <p class="frame-no">3'5' Frame 3</p>
       <p class="chis"><% Fthree_rev %></p>
+      <p class="ORF"><% ORFs_three_rev %></p>
     </div>
   </div>
 </center>

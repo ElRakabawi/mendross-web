@@ -1,6 +1,6 @@
 package Mendross;
 use Dancer2;
-
+use diagnostics;
 
 our $VERSION = '0.1';
 
@@ -1292,10 +1292,14 @@ post '/compute' => sub {
     $Fone = $protein;
   }
 
+  my $ORFs_one = "Open-Reading Frames:<br/>";
   my @test_arr_one = orf_detect($Fone);
   my $itr_len_one = scalar(@test_arr_one);
   for(my $j=0; $j<$itr_len_one; $j++){
     print "($j) $test_arr_one[$j]\n";
+    if ($test_arr_one[$j]) {
+      $ORFs_one .= '['.($j+1).'] '.$test_arr_one[$j].'</br>';
+    }
   }
 
 
@@ -1309,10 +1313,14 @@ post '/compute' => sub {
     $Ftwo = $protein;
   }
 
+  my $ORFs_two = "Open-Reading Frames:<br/>";
   my @test_arr_two = orf_detect($Ftwo);
   my $itr_len_two = scalar(@test_arr_two);
   for(my $j=0; $j<$itr_len_two; $j++){
     print "($j) $test_arr_two[$j]\n";
+    if ($test_arr_two[$j]) {
+      $ORFs_two .= '['.($j+1).'] '.$test_arr_two[$j].'</br>';
+    }
   }
 
 
@@ -1326,10 +1334,14 @@ post '/compute' => sub {
     $Fthree = $protein;
   }
 
+  my $ORFs_three= "Open-Reading Frames:<br/>";
   my @test_arr_three = orf_detect($Fthree);
   my $itr_len_three = scalar(@test_arr_three);
   for(my $j=0; $j<$itr_len_three; $j++){
     print "($j) $test_arr_three[$j]\n";
+    if ($test_arr_three[$j]) {
+      $ORFs_three .= '['.($j+1).'] '.$test_arr_three[$j].'</br>';
+    }
   }
 
 
@@ -1364,10 +1376,14 @@ post '/compute' => sub {
     $Fone_rev = $protein;
   }
 
+  my $ORFs_one_rev = "Open-Reading Frames:<br/>";
   my @test_arr_one_rev = orf_detect($Fone_rev);
   my $itr_len_one_rev = scalar(@test_arr_one_rev);
   for(my $j=0; $j<$itr_len_one_rev; $j++){
     print "($j) $test_arr_one_rev[$j]\n";
+    if ($test_arr_one_rev[$j]) {
+      $ORFs_one_rev .= '['.($j+1).'] '.$test_arr_one_rev[$j].'</br>';
+    }
   }
 
 
@@ -1381,10 +1397,14 @@ post '/compute' => sub {
     $Ftwo_rev = $protein;
   }
 
+  my $ORFs_two_rev = "Open-Reading Frames:<br/>";
   my @test_arr_two_rev = orf_detect($Ftwo_rev);
   my $itr_len_two_rev = scalar(@test_arr_two_rev);
   for(my $j=0; $j<$itr_len_two_rev; $j++){
     print "($j) $test_arr_two_rev[$j]\n";
+    if ($test_arr_two_rev[$j]) {
+      $ORFs_two_rev .= '['.($j+1).'] '.$test_arr_two_rev[$j].'</br>';
+    }
   }
 
   # 3'5'Frame 3 translation
@@ -1397,10 +1417,14 @@ post '/compute' => sub {
     $Fthree_rev = $protein;
   }
 
+  my $ORFs_three_rev = "Open-Reading Frames:<br/>";
   my @test_arr_three_rev = orf_detect($Fthree_rev);
   my $itr_len_three_rev = scalar(@test_arr_three_rev);
   for(my $j=0; $j<$itr_len_three_rev; $j++){
     print "($j) $test_arr_three_rev[$j]\n";
+    if ($test_arr_three_rev[$j]) {
+      $ORFs_three_rev .= '['.($j+1).'] '.$test_arr_three_rev[$j].'</br>';
+    }
   }
 
   #Function for detection of ORFs within the amino acid sequence
@@ -1436,6 +1460,12 @@ post '/compute' => sub {
     'Fone_rev' => $Fone_rev,
     'Ftwo_rev' => $Ftwo_rev,
     'Fthree_rev' => $Fthree_rev,
+    'ORFs_one' => $ORFs_one,
+    'ORFs_two' => $ORFs_two,
+    'ORFs_three' => $ORFs_three_rev,
+    'ORFs_one_rev' => $ORFs_one_rev,
+    'ORFs_two_rev' => $ORFs_two_rev,
+    'ORFs_three_rev' => $ORFs_three_rev,
 
   }
 };
