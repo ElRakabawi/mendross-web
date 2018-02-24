@@ -1,6 +1,6 @@
 <center>
   <div style="position: absolute; width: 100%; height: 210px; top: 0px; background-color: white; z-index: 10">
-    <svg class="minimalDNASVG" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" >
+    <svg class="minimalDNASVG" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
      <defs>
      <clipPath id="circMask">
       <circle class="dnaMask" cx="400" cy="300" r="155"/>
@@ -63,13 +63,44 @@
   </div>
 
   <div class="wrapper" style="margin-top: 70px; margin-bottom: 50px">
-    <p style="opacity: 0.7; margin-top: 40px; font-size: 18px; margin-bottom: 30px">Gentein is a translator tool for translating DNA or mRNA sequences to protein sequence (Amino Acids Seq) supporting Open-Reading frames</p>
+    <p style="opacity: 0.7; margin-top: 40px; font-size: 18px; margin-bottom: 30px">Gentein is a six-frame online translator tool for translating DNA/mRNA sequences to protein sequence (AA) supporting Open-Reading Frames</p>
     <form method="POST" role="form" action="/compute">
       <div class="form-group" style="max-width: 650px">
         <label for="exampleTextarea">Enter your DNA or mRNA sequence below to be translated: </label>
-        <textarea rows="15" cols="70" type="text" class="form-control" name="entry" placeholder="ACGATCAGATAGATGA or GAUUAGCAGAGCAUAGA"></textarea>
+        <textarea rows="15" cols="70" type="text" class="form-control" name="entry" placeholder="ATGC/AUGC"><% GenDNA %></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="cursor: pointer">Translate Sequence</button>
+      <div style="max-width: 650px">
+        <button type="submit" class="btn btn-primary genBtn" style="width: 50%">Translate Sequence</button>
+        <button type="button" class="btn btn-dark genBtn" data-toggle="modal" data-target="#exampleModal" style="width: 49%">
+          Generate Random DNA Seq.
+        </button>
+      </div>
     </form>
   </div>
 </center>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form method="POST" role="form" action="/gentein">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Generate a Psuedo-Random DNA</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label>Enter the length of the DNA</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="DNALen" value="600">
+              <span class="input-group-addon" id="basic-addon2">base</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="cursor: pointer">Close</button>
+          <button type="submit" class="btn btn-primary" style="cursor: pointer">Generate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

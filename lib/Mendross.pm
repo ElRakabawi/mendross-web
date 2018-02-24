@@ -8,8 +8,22 @@ get '/' => sub {
     template 'index' => { 'title' => 'Mendross' };
 };
 
+post '/gentein' => sub {
+  my $baseLen = body_parameters->get('DNALen');
+  my @bases = ("A","T","C","G");
+  my $GenDNA;
+  for(my $i=0; $i<$baseLen; $i++){
+    $GenDNA .= $bases[rand @bases];
+  }
+
+  template 'gentein' => {
+    'title' => 'Gentein | Gene to Protein Translator',
+    'GenDNA' => $GenDNA
+  };
+};
+
 get '/gentein' => sub {
-    template 'gentein' => { 'title' => 'Gentein | Gene to Protein Translator' };
+  template 'gentein' => { 'title' => 'Gentein | Gene to Protein Translator' };
 };
 
 post '/cross' => sub {

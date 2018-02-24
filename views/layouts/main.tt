@@ -231,7 +231,6 @@
     border-radius: 9px;
     text-align: left;
     transition: all 0.3s ease-in;
-    cursor: pointer;
   }
 
   .frame-no {
@@ -260,9 +259,22 @@
 
   p.ORF {
     line-height: 1.5;
-    color: #4a225b;
+    color: black;
     font-weight: 500;
     font-size: 15px;
+  }
+
+  .genBtn {
+    box-shadow: none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 300;
+  }
+  @media (max-width: 580px) {
+    .genBtn {
+      width: 100% !important;
+    }
   }
   </style>
 </head>
