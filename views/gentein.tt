@@ -84,7 +84,7 @@
     <div class="modal-content">
       <form method="POST" role="form" action="/gentein">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Generate a Psuedo-Random DNA</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Generate a Pseudo-Random DNA</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
