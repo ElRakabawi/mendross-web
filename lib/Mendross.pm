@@ -5,6 +5,10 @@ use diagnostics;
 our $VERSION = '0.1';
 
 get '/' => sub {
+    template 'welcome' => { 'title' => 'Mendross Kit' };
+};
+
+get '/mendross' => sub {
     template 'index' => { 'title' => 'Mendross' };
 };
 

@@ -1,0 +1,8 @@
+<center>
+  <div style="position: absolute; width: 100%; height: 150px; top: 0px; background-color: white; z-index: 10">
+  <div class="wrapper" style="margin-top: 75px; margin-bottom: 75px">
+    <h5 class="welcome">Welcome to Mendross Kit, developed by <a href="https://elrakabawi.github.io">@ElRakabawi.</a></h2>
+  </div>
+  <div class="panel left"></div>
+  <div class="panel right"></div>
+</center>

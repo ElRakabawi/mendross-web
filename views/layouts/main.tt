@@ -39,6 +39,14 @@
       margin-top: 50px;
   }
 
+  html {
+    height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+  }
+
+  body {
+    min-height:100%;
+  }
 
   table#datatable {
       max-width: 50% !important;
@@ -271,6 +279,63 @@
     padding: 15px;
     font-weight: 300;
   }
+  h5.welcome {
+    font-weight: 300;
+  }
+  .left-half {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+  .right-half {
+    width: 50%;
+    height: 100%;
+    background-color: #9c27b0;
+    display: inline-block;
+  }
+
+  .panel {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    z-index: 6;
+    visibility: visible;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition:  -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  }
+  .panel.left {
+    left: 0;
+    background-color: #292d39;
+  }
+  .panel.left:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    height: 101px;
+    width: 0;
+  }
+  .panel.right {
+    right: 0;
+    background-color: #9c27b0;
+  }
+  .panel.right:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    height: 101px;
+    width: 0;
+  }
+
+
   @media (max-width: 580px) {
     .genBtn {
       width: 100% !important;
