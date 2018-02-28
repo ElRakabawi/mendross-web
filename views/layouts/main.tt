@@ -228,6 +228,10 @@
    stroke:#8E44AD;
   }
 
+  .uiOutline.line{
+   stroke: white !important;
+  }
+
   .bars line:nth-child(2,4,6){
    stroke: #8E44AD !important;
   }
@@ -282,18 +286,6 @@
   h5.welcome {
     font-weight: 300;
   }
-  .left-half {
-    width: 50%;
-    height: 100%;
-    display: inline-block;
-    float: left;
-  }
-  .right-half {
-    width: 50%;
-    height: 100%;
-    background-color: #9c27b0;
-    display: inline-block;
-  }
 
   .panel {
     position: fixed;
@@ -301,14 +293,11 @@
     height: 100%;
     z-index: 6;
     visibility: visible;
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition:  -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    z-index: 15;
   }
   .panel.left {
     left: 0;
-    background-color: #292d39;
+    background-color: white;
   }
   .panel.left:before {
     position: absolute;
@@ -319,6 +308,25 @@
     content: '';
     height: 101px;
     width: 0;
+  }
+  .minimalDNASVG {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+  }
+  .MendLogo {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+  }
+  .MendLogo:hover {
+    width: 380px;
+  }
+  .panel.left:hover ~ MendLogo {
+    width: 380px !important;
+  }
+  .minimalDNASVG:hover {
+    width: 270px;
+    height: 270px;
+    margin-top: -30px;
   }
   .panel.right {
     right: 0;
