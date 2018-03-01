@@ -320,7 +320,7 @@
   .MendLogo:hover {
     width: 380px;
   }
-  .panel.left:hover ~ MendLogo {
+  h5.welcome:hover > MendLogo {
     width: 380px !important;
   }
   .minimalDNASVG:hover {

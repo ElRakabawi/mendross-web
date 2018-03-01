@@ -3,83 +3,85 @@
   <div class="wrapper" style="margin-top: 50px; margin-bottom: 50px">
     <h5 class="welcome">Welcome to Mendross Kit, developed by <a target="_blank" href="https://elrakabawi.github.io">@ElRakabawi.</a></h2>
   </div>
-  <div class="panel left">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12" style="margin-top: 300px">
-                <img class="MendLogo" src="logo.png" width="350px"></img>
-            </div>
-        </div>
-    </div>
-  </div>
-  <div class="panel right">
-    <a href="/gentein">
+  <a href="/mendross">
+    <div class="panel left">
       <div class="container-fluid">
           <div class="row">
-              <div class="col-md-12" style="margin-top: 200px">
-                <svg class="minimalDNASVG" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-                 <defs>
-                 <clipPath id="circMask">
-                  <circle class="dnaMask" cx="400" cy="300" r="155"/>
-                  </clipPath>
-                 <clipPath id="strandMask">
-
-                        <path d="M912.5,269.5c31.49,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C865.25,284.5,881,269.5,912.5,269.5Z"/>
-                        <path d="M786.5,269.5c31.5,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C739.25,284.5,755,269.5,786.5,269.5Z"/>
-                        <path d="M660.5,269.5c31.5,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C613.25,284.5,629,269.5,660.5,269.5Z"/>
-                        <path d="M597.49,299.5c-15.75,15-31.5,30-63,30s-47.26-15-63-30c15.75-15,31.5-30,63-30S581.74,284.5,597.49,299.5Z"/>
-                        <path d="M471.5,299.49c-15.75,15-31.5,30-63,30s-47.24-15-63-30c15.75-15,31.5-30,63-30S455.75,284.49,471.5,299.49Z"/>
-                        <path d="M282.49,269.5c31.51,0,47.26,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C235.26,284.49,251,269.5,282.49,269.5Z"/>
-                        <path d="M156.5,269.5c31.49,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C109.25,284.5,125,269.5,156.5,269.5Z"/>
-
-
-                 </clipPath>
-                  <path d="M23,0c1.8,0,3.3,1.5,3.3,3.3S24.8,6.6,23,6.6c-1.8,0-3.3-1.5-3.3-3.3S21.2,0,23,0z M15.7,9.8
-                  c-1.6-1.6-1.4-8.1-3.8-8.1S9.7,8.3,8.1,9.8S0,11.3,0,13.6s6.5,2.3,8.1,3.8s1.4,8.1,3.8,8.1s2.3-6.5,3.8-8.1s8.1-1.4,8.1-3.8
-                  S17.3,11.4,15.7,9.8z"/>
-
-                 </defs>
-                 <g class="all">
-                 <g class="whole" clip-path="url(#circMask)" transform="rotate(23 400 300)">
-
-                 <g class="bars uiOutline line" clip-path="url(#strandMask)"  fill="none" stroke="#FE5F55" stroke-miterlimit="10" stroke-width="10">
-                        <line x1="130" y1="335" x2="130" y2="265"/>
-                        <line x1="172" y1="265" x2="172" y2="335"/>
-                        <line x1="214" y1="265" x2="214" y2="335"/>
-                        <line x1="46" y1="335" x2="46" y2="265"/>
-                        <line x1="88" y1="265" x2="88" y2="335"/>
-                        <line x1="4" y1="335" x2="4" y2="265"/>
-                        <line x1="256" y1="265" x2="256" y2="335"/>
-                        <line x1="298" y1="265" x2="298" y2="335"/>
-                        <line x1="298" y1="335" x2="298" y2="265"/>
-                        <line x1="340" y1="265" x2="340" y2="335"/>
-                        <line x1="382" y1="265" x2="382" y2="335"/>
-                        <line x1="424" y1="265" x2="424" y2="335"/>
-                        <line x1="466" y1="265" x2="466" y2="335"/>
-                        <line x1="508" y1="265" x2="508" y2="335"/>
-                        <line x1="550" y1="265" x2="550" y2="335"/>
-                        <line x1="592" y1="265" x2="592" y2="335"/>
-                        <line x1="634" y1="265" x2="634" y2="335"/>
-                        <line x1="634" y1="335" x2="634" y2="265"/>
-                        <line x1="676" y1="265" x2="676" y2="335"/>
-                        <line x1="718" y1="265" x2="718" y2="335"/>
-                        <line x1="760" y1="265" x2="760" y2="335"/>
-                        <line x1="802" y1="265" x2="802" y2="335"/>
-                      </g>
-                     <path class="offsetStrand" opacity="1" fill="none" stroke="#EEF5DB" stroke-width="0" d="M1038.51,329.5c-63,0-63-60-126-60s-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60"/>
-                       <g class="strandOutlines uiOutline line" fill="none" stroke="#FE5F55" stroke-miterlimit="10" stroke-width="10">
-                        <path d="M30.5,269.5c63,0,63,60,126,60s63-60,126-60,63,60,126,60,63-60,126-60,63,60,126,60,63-60,126-60,63,60,126,60,63-60,126-60"/>
-
-                        <path opacity="1" d="M1038.51,329.5c-63,0-63-60-126-60s-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60"/>
-                        </g>
-                  </g>
-                  <circle class="outline uiOutline line" cx="400" cy="300" r="180"  fill="none" stroke="#8E44AD" stroke-miterlimit="10" stroke-width="20" opacity="1" />
-                </g>
-                </svg>
-                <h1 class="Logo-typo" style="color: white !important">Gentein</h1>
+              <div class="col-md-12" style="margin-top: 300px">
+                  <img class="MendLogo" src="logo.png" width="350px"></img>
               </div>
           </div>
       </div>
-    </a>
-  </div>
+    </div>
+  </a>
+  <a href="/gentein">
+    <div class="panel right">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 200px">
+                  <svg class="minimalDNASVG" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                   <defs>
+                   <clipPath id="circMask">
+                    <circle class="dnaMask" cx="400" cy="300" r="155"/>
+                    </clipPath>
+                   <clipPath id="strandMask">
+
+                          <path d="M912.5,269.5c31.49,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C865.25,284.5,881,269.5,912.5,269.5Z"/>
+                          <path d="M786.5,269.5c31.5,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C739.25,284.5,755,269.5,786.5,269.5Z"/>
+                          <path d="M660.5,269.5c31.5,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C613.25,284.5,629,269.5,660.5,269.5Z"/>
+                          <path d="M597.49,299.5c-15.75,15-31.5,30-63,30s-47.26-15-63-30c15.75-15,31.5-30,63-30S581.74,284.5,597.49,299.5Z"/>
+                          <path d="M471.5,299.49c-15.75,15-31.5,30-63,30s-47.24-15-63-30c15.75-15,31.5-30,63-30S455.75,284.49,471.5,299.49Z"/>
+                          <path d="M282.49,269.5c31.51,0,47.26,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C235.26,284.49,251,269.5,282.49,269.5Z"/>
+                          <path d="M156.5,269.5c31.49,0,47.25,15,63,30-15.75,15-31.5,30-63,30s-47.25-15-63-30C109.25,284.5,125,269.5,156.5,269.5Z"/>
+
+
+                   </clipPath>
+                    <path d="M23,0c1.8,0,3.3,1.5,3.3,3.3S24.8,6.6,23,6.6c-1.8,0-3.3-1.5-3.3-3.3S21.2,0,23,0z M15.7,9.8
+                    c-1.6-1.6-1.4-8.1-3.8-8.1S9.7,8.3,8.1,9.8S0,11.3,0,13.6s6.5,2.3,8.1,3.8s1.4,8.1,3.8,8.1s2.3-6.5,3.8-8.1s8.1-1.4,8.1-3.8
+                    S17.3,11.4,15.7,9.8z"/>
+
+                   </defs>
+                   <g class="all">
+                   <g class="whole" clip-path="url(#circMask)" transform="rotate(23 400 300)">
+
+                   <g class="bars uiOutline line" clip-path="url(#strandMask)"  fill="none" stroke="#FE5F55" stroke-miterlimit="10" stroke-width="10">
+                          <line x1="130" y1="335" x2="130" y2="265"/>
+                          <line x1="172" y1="265" x2="172" y2="335"/>
+                          <line x1="214" y1="265" x2="214" y2="335"/>
+                          <line x1="46" y1="335" x2="46" y2="265"/>
+                          <line x1="88" y1="265" x2="88" y2="335"/>
+                          <line x1="4" y1="335" x2="4" y2="265"/>
+                          <line x1="256" y1="265" x2="256" y2="335"/>
+                          <line x1="298" y1="265" x2="298" y2="335"/>
+                          <line x1="298" y1="335" x2="298" y2="265"/>
+                          <line x1="340" y1="265" x2="340" y2="335"/>
+                          <line x1="382" y1="265" x2="382" y2="335"/>
+                          <line x1="424" y1="265" x2="424" y2="335"/>
+                          <line x1="466" y1="265" x2="466" y2="335"/>
+                          <line x1="508" y1="265" x2="508" y2="335"/>
+                          <line x1="550" y1="265" x2="550" y2="335"/>
+                          <line x1="592" y1="265" x2="592" y2="335"/>
+                          <line x1="634" y1="265" x2="634" y2="335"/>
+                          <line x1="634" y1="335" x2="634" y2="265"/>
+                          <line x1="676" y1="265" x2="676" y2="335"/>
+                          <line x1="718" y1="265" x2="718" y2="335"/>
+                          <line x1="760" y1="265" x2="760" y2="335"/>
+                          <line x1="802" y1="265" x2="802" y2="335"/>
+                        </g>
+                       <path class="offsetStrand" opacity="1" fill="none" stroke="#EEF5DB" stroke-width="0" d="M1038.51,329.5c-63,0-63-60-126-60s-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60"/>
+                         <g class="strandOutlines uiOutline line" fill="none" stroke="#FE5F55" stroke-miterlimit="10" stroke-width="10">
+                          <path d="M30.5,269.5c63,0,63,60,126,60s63-60,126-60,63,60,126,60,63-60,126-60,63,60,126,60,63-60,126-60,63,60,126,60,63-60,126-60"/>
+
+                          <path opacity="1" d="M1038.51,329.5c-63,0-63-60-126-60s-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60-63-60-126-60-63,60-126,60"/>
+                          </g>
+                    </g>
+                    <circle class="outline uiOutline line" cx="400" cy="300" r="180"  fill="none" stroke="#8E44AD" stroke-miterlimit="10" stroke-width="20" opacity="1" />
+                  </g>
+                  </svg>
+                  <h1 class="Logo-typo" style="color: white !important">Gentein</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+  </a>
 </center>
