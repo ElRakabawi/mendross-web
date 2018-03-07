@@ -9,7 +9,7 @@
           <div class="row">
               <div class="col-md-12" style="margin-top: 290px">
                   <img class="MendLogo" src="logo.png" width="350px"></img>
-                  <p class="bodyT lt">Online tool for solving Mendelian crossing problems using punnett squares and giving pheno/genotype ratios and chi-square analysis.</p>
+                  <p class="bodyT lt">Online tool for solving Mendelian crossing problems using punnett squares giving pheno/genotype ratios and chi-square analysis.</p>
               </div>
           </div>
       </div>
