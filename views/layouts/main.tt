@@ -342,6 +342,20 @@
     height: 101px;
     width: 0;
   }
+  .bodyT {
+    font-weight: 300;
+    font-size: 17.5px;
+    margin-top: 25px;
+    max-width: 65%;
+  }
+
+  .rt {
+    color: white;
+  }
+  .lt {
+    color: #9c27b0;
+  }
+
 
 
   @media (max-width: 580px) {
