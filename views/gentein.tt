@@ -70,15 +70,20 @@
         <textarea rows="15" cols="70" type="text" class="form-control" name="entry" placeholder="ATGC/AUGC"><% GenDNA %></textarea>
       </div>
       <div style="max-width: 650px">
-        <button type="submit" class="btn btn-primary genBtn" style="width: 50%">Translate Sequence</button>
+        <button type="button" class="btn btn-dark genBtn" data-toggle="modal" data-target="#Modal" style="width: 50%">
+          Retrieve from GenBank 
+        </button>
         <button type="button" class="btn btn-dark genBtn" data-toggle="modal" data-target="#exampleModal" style="width: 49%">
           Generate Random DNA Seq.
         </button>
+        <button type="submit" class="btn btn-primary genBtn" style="width: 99.5%; margin-top: 5px">Translate Sequence</button>
       </div>
     </form>
   </div>
 </center>
 
+
+<!-- Random Generation modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -99,6 +104,33 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" style="cursor: pointer">Close</button>
           <button type="submit" class="btn btn-primary" style="cursor: pointer">Generate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!--Genbank retrieval modal -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form method="POST" role="form" action="/gentein">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Retrieve a sequence from Genbank</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label>Enter the ACCESSION number of the sequence</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="accNo">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="cursor: pointer">Close</button>
+          <button type="submit" class="btn btn-primary" style="cursor: pointer">Retrieve</button>
         </div>
       </form>
     </div>
