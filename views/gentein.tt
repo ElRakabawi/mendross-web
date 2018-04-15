@@ -67,7 +67,10 @@
     <form method="POST" role="form" action="/compute">
       <div class="form-group" style="max-width: 650px">
         <label for="exampleTextarea">Enter your DNA or mRNA sequence below to be translated: </label>
-        <textarea rows="15" cols="70" type="text" class="form-control" name="entry" placeholder="ATGC/AUGC"><% GenDNA %></textarea>
+        <textarea rows="15" cols="70" type="text" class="form-control" name="entry" placeholder="ATGC/AUGC">
+          <% GenDNA %>
+          <% retDNA %>
+        </textarea>
       </div>
       <div style="max-width: 650px">
         <button type="button" class="btn btn-dark genBtn" data-toggle="modal" data-target="#Modal" style="width: 50%">

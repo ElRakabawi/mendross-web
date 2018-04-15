@@ -14,15 +14,26 @@ get '/mendross' => sub {
 
 post '/gentein' => sub {
   my $baseLen = body_parameters->get('DNALen');
+  my $accNo = body_parameters->get('accNo');
   my @bases = ("A","T","C","G");
   my $GenDNA;
   for(my $i=0; $i<$baseLen; $i++){
     $GenDNA .= $bases[rand @bases];
   }
 
+
+  use Bio::DB::GenBank;
+  use Bio::SeqIO;  
+  $ENV{PERL_LWP_SSL_VERIFY_HOSTNAME} = 0;
+  my $gbank = new Bio::DB::GenBank;
+  my $cds;
+
+  my $seq1 = $gbank -> get_Seq_by_acc($accNo);
+  my $sequence = $seq1 -> seq;
+  
   template 'gentein' => {
     'title' => 'Gentein | Gene to Protein Translator',
-    'GenDNA' => $GenDNA
+    'GenDNA' => $sequence
   };
 };
 
