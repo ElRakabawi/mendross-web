@@ -2,7 +2,7 @@
   <b>Main Links</b><br>
   <a href="https://github.com/elrakabawi/mendross" style="color: #AC00B1">Command-Line Interface Version</a> |
   <a href="https://elrakabawi.github.io/blog/2017/12/28/about-me/" style="color: #AC00B1">The author</a> |
-  <a href="http://mendross.com/Mendross_Abstract.pdf" style="color: #AC00B1">Abstract</a>
+  <a href="https://elrakabawi.github.io/Mendross_Abstract.pdf" style="color: #AC00B1">Abstract</a>
   <br><br>
   <img src="https://elrakabawi.github.io/images/logo.png">
 </p>
