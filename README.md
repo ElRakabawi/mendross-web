@@ -4,7 +4,7 @@
   <a href="https://elrakabawi.github.io/blog/2017/12/28/about-me/" style="color: #AC00B1">The author</a> |
   <a href="http://mendross.com/Mendross_Abstract.pdf" style="color: #AC00B1">Abstract</a>
   <br><br>
-  <img src="http://mendross.com/logo.png">
+  <img src="https://elrakabawi.github.io/images/logo.png">
 </p>
 
 
